@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/anim-cards.css">
+  <link rel="stylesheet" href="./styles/media.css">
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer type="module" src="./scripts/animateQuote.js"></script>
+  <script defer src="./scripts/animateTree.js"></script>
+</head>
+<body>
+  
+  <header class="header">
+    <a href="#" class="header__logo">
+      <span>Math</span>
+      <span>AI</span>
+    </a>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <canvas id="tree-canvas" class="tree-canvas"></canvas>
+      <div class="container">
+        <h1 class="hero__header">
+          <span class="hero__header__quote" id="quote">Математика – это язык, на котором Бог написал вселенную.</span>
+          <span class="hero__header__author" id="author">Галилео Галилей</span>
+        </h1>
+
+        <div class="hero__wrapper">
+          <a href="#" class="btn btn-red">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M296.17-71.87q-59.91 0-102.1-42.2-42.2-42.19-42.2-102.1v-527.66q0-59.91 42.2-102.1 42.19-42.2 102.1-42.2h511.96v616.26q-23.21 0-39.45 16.25-16.24 16.24-16.24 39.45 0 23.2 16.24 39.45 16.24 16.24 39.45 16.24v88.61H296.17Zm-55.69-277.52q12.99-6.1 26.92-8.71 13.92-2.62 28.77-2.62h24.31v-438.8h-24.31q-23.2 0-39.45 16.24-16.24 16.25-16.24 39.45v394.44Zm168.61-11.33h310.43v-438.8H409.09v438.8Zm-168.61 11.33v-450.13 450.13Zm55.69 188.91h378.98q-5.23-13.06-8.27-26.6-3.05-13.53-3.05-29.17 0-14.73 2.61-28.67 2.61-13.94 8.71-26.95H296.17q-24.13 0-39.91 16.25-15.78 16.24-15.78 39.45 0 24.13 15.78 39.91 15.78 15.78 39.91 15.78Z"/></svg>
+            <span>Содержание</span>
+          </a>
+          <a href="#" class="btn btn-yellow">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="m438-239.76 228.63-228.63-60.39-60.39-169 169L353-444.02l-59.63 59.63L438-239.76ZM242.87-71.87q-37.78 0-64.39-26.61t-26.61-64.39v-634.26q0-37.78 26.61-64.39t64.39-26.61h320.48l244.78 244.78v480.48q0 37.78-26.61 64.39t-64.39 26.61H242.87Zm274.26-525.26v-200H242.87v634.26h474.26v-434.26h-200Zm-274.26-200v200-200 634.26-634.26Z"/></svg>
+            <span>Задачи</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h3 class="section-header">
+          О проекте
+        </h3>
+        <p class="about__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, libero! Dolore expedita facere commodi itaque sed similique voluptas impedit exercitationem, quae at laboriosam architecto, nulla fugiat atque voluptatum quidem quibusdam!
+          Officiis odio, reiciendis minus commodi corrupti sunt sint porro quod consectetur similique quos quam delectus, enim rem. Sunt, similique ad nihil dolores rem impedit quasi perferendis culpa ex eos quisquam!
+          Natus dolorum blanditiis, minima, iusto ad exercitationem hic sequi, cupiditate eligendi delectus quibusdam quidem. Quibusdam, est! Quod tempore iure recusandae? Nesciunt perspiciatis odit pariatur rem culpa quis voluptatem omnis nulla!
+        </p>
+
+        <p class="about__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, libero! Dolore expedita facere commodi itaque sed similique voluptas impedit exercitationem, quae at laboriosam architecto, nulla fugiat atque voluptatum quidem quibusdam!
+          Officiis odio, reiciendis minus commodi corrupti sunt sint porro quod consectetur similique quos quam delectus, enim rem. Sunt, similique ad nihil dolores rem impedit quasi perferendis culpa ex eos quisquam!
+          Natus dolorum blanditiis, minima, iusto ad exercitationem hic sequi, cupiditate eligendi delectus quibusdam quidem. Quibusdam, est! Quod tempore iure recusandae? Nesciunt perspiciatis odit pariatur rem culpa quis voluptatem omnis nulla!
+        </p>
+
+        <p class="about__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, libero! Dolore expedita facere commodi itaque sed similique voluptas impedit exercitationem, quae at laboriosam architecto, nulla fugiat atque voluptatum quidem quibusdam!
+          Officiis <a href="#" class="link">hello world</a> odio, reiciendis minus commodi corrupti sunt sint porro quod consectetur similique quos quam delectus, enim rem. Sunt, similique ad nihil dolores rem impedit quasi perferendis culpa ex eos quisquam!
+          Natus dolorum blanditiis, minima, iusto ad exercitationem hic sequi, cupiditate eligendi delectus quibusdam quidem. Quibusdam, est! Quod tempore iure recusandae? Nesciunt perspiciatis odit pariatur rem culpa quis voluptatem omnis nulla!
+        </p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tasks-cards">
+      <div class="container">
+        <h3 class="section-header">
+          Задачи
+        </h3>
+
+        <div class="tasks-cards__options">
+          <input class="tasks-cards__input" type="text" placeholder="Найти тему...">
+
+          <div class="tasks-cards__categories">
+            <button class="btn-reset link link--blue">Алгебра</button>
+            <button class="btn-reset link link--purple">Теория вероятностей</button>
+            <button class="btn-reset link link--green">Анализ</button>
+            <button class="btn-reset link">Геометрия</button>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn-reset dropdown__btn">Тема</button>
+            <ul class="list-reset dropdown__list">
+              <li class="dropdown__list__item">
+                <button class="btn-reset dropdown__content__btn link link--blue">Алгебра</button>
+              </li>
+              <li class="dropdown__list__item">
+                <button class="btn-reset dropdown__content__btn link link--purple">Геометрия</button>
+              </li>
+              <li class="dropdown__list__item">
+                <button class="btn-reset dropdown__content__btn link link--green">Анализ</button>
+              </li>
+              <li class="dropdown__list__item">
+                <button class="btn-reset dropdown__content__btn link">Геометрия</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="list-reset tasks-cards__list">
+          <li class="tasks-cards__list__item">
+            <a href="#" class="tasks-cards__card-link">
+              <div class="card blue-card">
+                <h4 class="card__title">Системы линейных уравнений</h4>
+                <div class="card__preview">
+                  <p class="article__formula--span">
+                    \( \begin{cases} 2x + 3y = 8 \\ x - y = 1 \end{cases} \)
+                  </p>
+                </div>
+                <p class="card__count">12 задач</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="tasks-cards__list__item">
+            <a href="#" class="tasks-cards__card-link">
+              <div class="card purple-card">
+                <h4 class="card__title">Теория вероятности</h4>
+                <div class="card__preview">
+                  <p class="article__formula--span">
+                    \( E = mc^2 \)
+                  </p>
+                </div>
+                <p class="card__count">12 задач</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="tasks-cards__list__item">
+            <a href="#" class="tasks-cards__card-link">
+              <div class="card green-card">
+                <h4 class="card__title">Математическое ожидание</h4>
+                <div class="card__preview">
+                  <p class="article__formula--span">
+                    \( E = mc^2 \)
+                  </p>
+                </div>
+                <p class="card__count">12 задач</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="tasks-cards__list__item">
+            <a href="#" class="tasks-cards__card-link">
+              <div class="card blue-card">
+                <h4 class="card__title">Матрицы</h4>
+                <div class="card__preview">
+                  <div class="matrix-anim">
+                    <span class="default">
+                      <span class="row">
+                        <span>1</span> <span>2</span> <span>3</span>
+                      </span>
+                      <span class="row">
+                        <span>4</span> <span>5</span> <span>6</span>
+                      </span>
+                      <span class="row">
+                        <span>7</span> <span>8</span> <span>9</span>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <p class="card__count">12 задач</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+
+</body>
+</html>
