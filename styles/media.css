@@ -72,6 +72,11 @@
     width: 100%;
     min-height: 120px;
   }
+
+  .article__formula,
+  .article__formula--span {
+    font-size: 0.75em;
+  }
 }
 
 @media (max-width: 440px) {
