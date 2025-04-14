@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/media.css">
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script defer src="../scripts/calculator_log_regres.js"></script>
   <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
 </head>
 <body>
 
@@ -515,7 +515,7 @@
                   <span>Введите коэффицент обучения (\(\eta\)). Например: 0.1 </span>
                   <input id="step" name="step" type="text" class="calculator__input" placeholder="0.1">
                 </label>
-                <button class="btn-reset btn btn-green calculator__btn" id="gradient_btn">Рассчитать</button>
+                <button class="btn-reset btn btn-green calculator__btn" id="gradient_btn">Вычислить</button>
               </div>
             </div>
   
@@ -527,6 +527,69 @@
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <section class="visual">
+      <div class="container">
+        <h3 class="section-header">
+          Визуализация бинарной классификации
+        </h3>
+        <p class="article__text">Исследуйте логистическую регрессию! Введите до 10 объектов с одним признаком \( x \) (от -10 до 10) и метками \( y \) (0 или 1). Синие точки — это класс 1 (\( y = 1 \)), красные — класс 0 (\( y = 0 \)). Веса \( w_0, w_1 \) выбираются случайно. Графики показывают:</p>
+        <ul>
+          <li class="article__text"><strong>Линейная функция</strong>: как \( x \) превращается в \( z = w_0 + w_1x \), вход для сигмоиды. Точки — это \( (x, z) \), поэтому они на прямой.</li>
+          <li class="article__text"><strong>Сигмоида</strong>: вероятности \( \sigma(z) \) для ваших точек. Синие точки должны быть ближе к 1, красные — к 0.</li>
+          <li class="article__text"><strong>Градиентный спуск</strong>: как веса \( w_0, w_1 \) подстраиваются, чтобы вероятности лучше соответствовали классам.</li>
+        </ul>
+        <p class="article__text">Нажмите "Запустить", чтобы увидеть плавное обучение!</p>
+        <h3 class="article__subheader">Инструкция для ввода</h3>
+        <p class="article__text">Введите объекты в формате: \( x, y \). Например: \( 2, 1 \) или \( -3, 0 \). Используйте \( x \) от -10 до 10, \( y \) — 0 или 1. Или нажмите "Случайные данные" для примера.</p>
+        <h3 class="article__subheader">Результаты графиков</h3>
+        <ul>
+          <li class="article__text">Линейная функция: точки \( (x, z) \), где \( z = w_0 + w_1x \), и линия этой функции.</li>
+          <li class="article__text">Сигмоида: точки \( (x, \sigma(z)) \), кривая вероятностей, вероятности рядом с точками.</li>
+          <li class="article__text">Градиентный спуск: движение весов \( w_0, w_1 \) к лучшему разделению классов.</li>
+        </ul>
+        <div class="visual__input-section">
+          <p>Введите до 10 объектов: x (от -10 до 10), y (0 или 1)</p>
+          <div class="visual__data-input__header">
+            <span>\(X_1\)</span>
+            <span>\(Y\)</span>
+          </div>
+          <div class="visual__data-input" id="data-input">
+            <div class="visual__data-row">
+              <span>1 - </span>
+              <input type="number" placeholder="x" step="any" class="visual__input">
+              <input type="number" placeholder="y" min="0" max="1" step="1" class="visual__input">
+            </div>
+          </div>
+          <div class="visual__btn-container">
+            <button class="btn-reset btn btn-blue" id="add-row">Добавить точку</button>
+            <button class="btn-reset btn btn-blue" id="random-data">Случайные данные</button>
+            <button id="run" class="btn-reset btn btn-green">Запустить</button>
+          </div>
+          <div class="visual__error" id="error">Ошибка: проверьте x (-10..10) и y (0 или 1)</div>
+        </div>
+        <div class="visual__formulas" id="formulas">
+          <div id="linear-formula"></div>
+        </div>
+        <div class="visual__graphs">
+          <div class="visual__graph-container">
+            <h4 class="visual__header">Линейная функция</h4>
+            <canvas class="visual__canvas" id="linear-canvas" width="300" height="200"></canvas>
+            <div class="visual__info" id="linear-info">\(z = w_0 + w_1x\)</div>
+          </div>
+          <div class="visual__graph-container">
+            <h4 class="visual__header">Сигмоида</h4>
+            <canvas class="visual__canvas" id="sigmoid-canvas" width="300" height="200"></canvas>
+            <div class="visual__info" id="sigmoid-info">\(\sigma(z) = \frac{1}{1 + e^{-z}}\)</div>
+          </div>
+          <div class="visual__graph-container">
+            <h4 class="visual__header">Градиентный спуск</h4>
+            <canvas class="visual__canvas" id="gradient-canvas" width="300" height="200"></canvas>
+            <div class="visual__info" id="gradient-info">\(w_0, w_1\)</div>
+          </div>
+        </div>
       </div>
     </section>
 
