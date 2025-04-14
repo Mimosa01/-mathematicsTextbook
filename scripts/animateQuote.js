@@ -3,7 +3,7 @@ import { quotes } from "./quotes.js";
 const quoteElement = document.getElementById('quote');
 const authorElement = document.getElementById('author');
 
-let index = 0;
+let index = Math.floor(Math.random() * quotes.length);
 
 function getRandomBinary() {
   return Math.random() > 0.5 ? '1' : '0';
@@ -69,7 +69,7 @@ async function cycleQuotes() {
     await new Promise(resolve => setTimeout(resolve, pauseTime));
 
     // Переходим к следующей цитате
-    index = (index + 1) % quotes.length;
+    index = Math.floor(Math.random() * quotes.length);
   }
 }
 
