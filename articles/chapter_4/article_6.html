@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Обратные тригонометрические функции: как найти угол по значению?
+        </h2>
+      
+        <p class="article__text">
+          Тригонометрия помогает нам находить значения синуса, косинуса, тангенса и котангенса для заданного угла. Но что делать, если нужно решить обратную задачу — найти угол, зная значение функции? Для этого существуют <b>обратные тригонометрические функции</b>: арксинус, арккосинус, арктангенс и арккотангенс. Давайте разберёмся, как они работают!
+        </p>
+      
+        <h3 class="article__subheader">
+          Что такое обратные тригонометрические функции?
+        </h3>
+      
+        <p class="article__text">
+          Обратные тригонометрические функции позволяют "вернуть" угол из значения тригонометрической функции. Например:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Если \(\sin(\alpha) = \frac{1}{2}\), то \(\alpha = \arcsin\left(\frac{1}{2}\right) = \frac{\pi}{6}\).
+          </li>
+          <li class="article__text">
+            Если \(\cos(\alpha) = -1\), то \(\alpha = \arccos(-1) = \pi\).
+          </li>
+          <li class="article__text">
+            Если \(\tan(\alpha) = 1\), то \(\alpha = \arctan(1) = \frac{\pi}{4}\).
+          </li>
+          <li class="article__text">
+            Если \(\cot(\alpha) = -\sqrt{3}\), то \(\alpha = \text{arcctg}(-\sqrt{3}) = \frac{5\pi}{6}\).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Но тут возникает одна проблема: одно значение функции может соответствовать <b>множеству углов</b>. Например, \(\sin(\alpha) = \frac{1}{2}\) выполняется не только для \(\alpha = \frac{\pi}{6}\), но и для \(\alpha = \frac{5\pi}{6}\), и для других углов. Как же быть?
+        </p>
+      
+        <h3 class="article__subheader">
+          Решение проблемы неоднозначности
+        </h3>
+      
+        <p class="article__text">
+          Чтобы сделать обратные функции однозначными, их ограничивают определёнными промежутками. На этих промежутках функция принимает <b>все возможные значения</b>, но возвращается только один угол. Разберём каждую функцию подробнее.
+        </p>
+      
+        <h3 class="article__subheader">
+          1. Арксинус (\(\arcsin\))
+        </h3>
+      
+        <p class="article__text">
+          Арксинус возвращает угол, лежащий в диапазоне от \(-\frac{\pi}{2}\) до \(\frac{\pi}{2}\):
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \arcsin(x) \in \left[-\frac{\pi}{2}, \frac{\pi}{2}\right]
+          \]
+        </p>
+      
+        <p class="article__text">
+          Это значит, что если \(\sin(\alpha) = x\), то арксинус вернёт угол \(\alpha\), который находится именно в этом промежутке. Например:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Если \(\sin(\alpha) = \frac{1}{2}\), то \(\alpha = \arcsin\left(\frac{1}{2}\right) = \frac{\pi}{6}\).
+          </li>
+          <li class="article__text">
+            Если \(\sin(\alpha) = -\frac{1}{2}\), то \(\alpha = \arcsin\left(-\frac{1}{2}\right) = -\frac{\pi}{6}\).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Функция арксинуса нечётна:
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \arcsin(-x) = -\arcsin(x)
+          \]
+        </p>
+      
+        <h3 class="article__subheader">
+          2. Арккосинус (\(\arccos\))
+        </h3>
+      
+        <p class="article__text">
+          Арккосинус возвращает угол, лежащий в диапазоне от \(0\) до \(\pi\):
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \arccos(x) \in [0, \pi]
+          \]
+        </p>
+      
+        <p class="article__text">
+          Если \(\cos(\alpha) = x\), то арккосинус вернёт угол \(\alpha\), который находится в этом промежутке. Например:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Если \(\cos(\alpha) = -1\), то \(\alpha = \arccos(-1) = \pi\).
+          </li>
+          <li class="article__text">
+            Если \(\cos(\alpha) = \frac{1}{2}\), то \(\alpha = \arccos\left(\frac{1}{2}\right) = \frac{\pi}{3}\).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Функция арккосинуса не является ни чётной, ни нечётной.
+        </p>
+      
+        <h3 class="article__subheader">
+          3. Арктангенс (\(\arctan\))
+        </h3>
+      
+        <p class="article__text">
+          Арктангенс возвращает угол, лежащий в диапазоне от \(-\frac{\pi}{2}\) до \(\frac{\pi}{2}\):
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \arctan(x) \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)
+          \]
+        </p>
+      
+        <p class="article__text">
+          График арктангенса представляет собой "наклонную" ветку, ограниченную горизонтальными асимптотами \(y = \frac{\pi}{2}\) и \(y = -\frac{\pi}{2}\). Например:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Если \(\tan(\alpha) = 1\), то \(\alpha = \arctan(1) = \frac{\pi}{4}\).
+          </li>
+          <li class="article__text">
+            Если \(\tan(\alpha) = -1\), то \(\alpha = \arctan(-1) = -\frac{\pi}{4}\).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Функция арктангенса нечётна:
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \arctan(-x) = -\arctan(x)
+          \]
+        </p>
+      
+        <h3 class="article__subheader">
+          4. Арккотангенс (\(\text{arcctg}\))
+        </h3>
+      
+        <p class="article__text">
+          Арккотангенс возвращает угол, лежащий в диапазоне от \(0\) до \(\pi\):
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \text{arcctg}(x) \in (0, \pi)
+          \]
+        </p>
+      
+        <p class="article__text">
+          Функция арккотангенса не является ни чётной, ни нечётной. Например:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Если \(\cot(\alpha) = \sqrt{3}\), то \(\alpha = \text{arcctg}(\sqrt{3}) = \frac{\pi}{6}\).
+          </li>
+          <li class="article__text">
+            Если \(\cot(\alpha) = -1\), то \(\alpha = \text{arcctg}(-1) = \frac{3\pi}{4}\).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          График арккотангенса ограничен асимптотами \(y = 0\) и \(y = \pi\).
+        </p>
+      
+        <h3 class="article__subheader">
+          Взаимные преобразования и тождества
+        </h3>
+      
+        <p class="article__text">
+          Обратные тригонометрические функции могут "взаимно уничтожать" друг друга, как экспоненциальная функция с натуральным логарифмом. Например:
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \arcsin(\sin(\alpha)) = \alpha \quad \text{и} \quad \sin(\arcsin(x)) = x
+          \]
+        </p>
+      
+        <p class="article__text">
+          Аналогично это работает для всех остальных пар функций:
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \arccos(\cos(\alpha)) = \alpha \quad \text{и} \quad \cos(\arccos(x)) = x
+          \]
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \arctan(\tan(\alpha)) = \alpha \quad \text{и} \quad \tan(\arctan(x)) = x
+          \]
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \text{arcctg}(\cot(\alpha)) = \alpha \quad \text{и} \quad \cot(\text{arcctg}(x)) = x
+          \]
+        </p>
+      
+        <p class="article__text">
+          Эти тождества справедливы только для допустимых значений \(\alpha\) и \(x\).
+        </p>
+      
+        <h3 class="article__subheader">
+          Важное замечание
+        </h3>
+      
+        <p class="article__text">
+          При работе с обратными тригонометрическими функциями важно помнить их диапазоны. Например, арктангенс и арккотангенс легко спутать, так как обе функции работают с тангенсом и котангенсом. Поэтому всегда проверяйте, какую функцию вы используете, чтобы избежать ошибок.
+        </p>
+      
+        <h3 class="article__subheader">
+          Заключение
+        </h3>
+      
+        <p class="article__text">
+          Обратные тригонометрические функции — это мощный инструмент для нахождения углов по известным значениям тригонометрических функций. Чтобы избежать неоднозначности, каждая из них имеет свой ограниченный диапазон значений. Понимание этих особенностей поможет вам уверенно решать задачи и выполнять тригонометрические преобразования. Удачи в изучении!
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

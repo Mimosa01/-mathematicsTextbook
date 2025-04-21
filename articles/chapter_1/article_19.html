@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Геометрическая прогрессия
+        </h2>
+      
+        <p class="article__text">
+          Геометрическая прогрессия — это последовательность чисел, где каждое следующее число получается умножением предыдущего на одно и то же число, называемое <b>знаменателем</b>. Давайте разберёмся, как она устроена, и научимся решать задачи с ней.
+        </p>
+      
+        <h3 class="article__subheader">
+          Что такое геометрическая прогрессия?
+        </h3>
+      
+        <p class="article__text">
+          Геометрическая прогрессия — это последовательность чисел, в которой:  
+          <p class="article__formula">
+            \[
+            b_{n+1} = b_n \cdot q,
+            \]
+          </p>
+          где:  
+          - \( b_n \) — текущий член прогрессии,  
+          - \( b_{n+1} \) — следующий член прогрессии,  
+          - \( q \) — знаменатель прогрессии (постоянное число).  
+        </p>
+      
+        <p class="article__text">
+          Прогрессия имеет вид:  
+          <p class="article__formula">
+            \[
+            b_1,\ b_1 \cdot q,\ b_1 \cdot q^2,\ b_1 \cdot q^3,\ \ldots
+            \]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          <b>Примеры:</b>  
+          - Возрастающая прогрессия: \( 2,\ 6,\ 18,\ 54,\ \ldots \) (здесь \( q = 3 \)).  
+          - Убывающая прогрессия: \( 100,\ 50,\ 25,\ 12.5,\ \ldots \) (здесь \( q = 0.5 \)).  
+          - Знакочередующаяся прогрессия: \( 1,\ -2,\ 4,\ -8,\ \ldots \) (здесь \( q = -2 \)).
+        </p>
+      
+        <h3 class="article__subheader">
+          Формула \( n \)-го члена геометрической прогрессии
+        </h3>
+      
+        <p class="article__text">
+          Чтобы найти \( n \)-й член прогрессии, используйте формулу:  
+          <p class="article__formula">
+            \[
+            b_n = b_1 \cdot q^{n - 1},
+            \]
+          </p>
+          где:  
+          - \( b_n \) — \( n \)-й член прогрессии,  
+          - \( b_1 \) — первый член прогрессии,  
+          - \( q \) — знаменатель прогрессии,  
+          - \( n \) — номер члена.
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>  
+          Найдём 5-й член прогрессии, где \( b_1 = 2 \) и \( q = 3 \):  
+          <p class="article__formula">
+            \[
+            b_5 = 2 \cdot 3^{5 - 1} = 2 \cdot 81 = 162.
+            \]
+          </p>
+        </p>
+      
+        <h3 class="article__subheader">
+          Сумма первых \( n \) членов геометрической прогрессии
+        </h3>
+      
+        <p class="article__text">
+          Сумму первых \( n \) членов можно вычислить по формуле:  
+          <p class="article__formula">
+            \[
+            S_n = b_1 \cdot \frac{q^n - 1}{q - 1}, \quad \text{если } q \ne 1.
+            \]
+          </p>
+          Если \( q = 1 \), то все члены равны, и сумма равна:  
+          <p class="article__formula">
+            \[
+            S_n = b_1 \cdot n.
+            \]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>  
+          Найдём сумму первых 4 членов прогрессии, где \( b_1 = 2 \) и \( q = 3 \):  
+          <p class="article__formula">
+            \[
+            S_4 = 2 \cdot \frac{3^4 - 1}{3 - 1} = 2 \cdot \frac{81 - 1}{2} = 2 \cdot \frac{80}{2} = 2 \cdot 40 = 80.
+            \]
+          </p>
+        </p>
+      
+        <h3 class="article__subheader">
+          Сумма бесконечно убывающей геометрической прогрессии
+        </h3>
+      
+        <p class="article__text">
+          Если \( |q| < 1 \), то геометрическая прогрессия убывает, и её сумма стремится к конечному значению. Сумма всех членов такой бесконечной прогрессии вычисляется по формуле:  
+          <p class="article__formula">
+            \[
+            S_{\infty} = \frac{b_1}{1 - q}.
+            \]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>  
+          Найдём сумму бесконечной прогрессии, где \( b_1 = 1 \) и \( q = 0.5 \):  
+          <p class="article__formula">
+            \[
+            S_{\infty} = \frac{1}{1 - 0.5} = \frac{1}{0.5} = 2.
+            \]
+          </p>
+        </p>
+      
+        <h3 class="article__subheader">
+          Характеристическое свойство геометрической прогрессии
+        </h3>
+      
+        <p class="article__text">
+          В геометрической прогрессии квадрат любого члена равен произведению его соседних членов:  
+          <p class="article__formula">
+            \[
+            b_n^2 = b_{n - 1} \cdot b_{n + 1}.
+            \]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>  
+          Пусть прогрессия: \( 2,\ 6,\ 18,\ 54,\ \ldots \). Проверим для \( b_2 = 6 \):  
+          <p class="article__formula">
+            \[
+            6^2 = 36,\quad 2 \cdot 18 = 36.
+            \]
+          </p>
+        </p>
+      
+        <h3 class="article__subheader">
+          Интерактивная анимация
+        </h3>
+      
+        <p class="article__text">
+          [Предлагаю создать интерактивную анимацию, где пользователь может вводить значения первого члена \( b_1 \), знаменателя \( q \) и номера члена \( n \). Анимация будет визуализировать построение прогрессии на числовой прямой, показывая каждый член и вычисляя сумму первых \( n \) членов. Также можно добавить возможность отображения бесконечно убывающей прогрессии и её суммы, если \( |q| < 1 \). Пользователь сможет изменять параметры и наблюдать изменения в прогрессии в реальном времени.]
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Что такое угол? Основы тригонометрии
+        </h2>
+      
+        <p class="article__text">
+          Тригонометрия — это наука, которая изучает углы, тригонометрические функции (синус, косинус и их "друзей"), а также связанные с ними формулы, уравнения и неравенства. Чтобы разобраться во всём этом, начнём с самого начала — <b>что такое угол</b>?
+        </p>
+      
+        <h3 class="article__subheader">
+          Что такое угол?
+        </h3>
+      
+        <p class="article__text">
+          Угол — это фигура, образованная двумя <b>лучами</b>, которые выходят из одной точки. Эта точка называется <b>вершиной угла</b>. Представьте, что один луч идёт вправо, а другой — вверх. Между ними и получается угол.
+        </p>
+      
+        <p class="article__text">
+          Иногда два луча могут образовать <b>два угла</b>: один острый (меньше 90°), а другой тупой или развёрнутый. Обычно из контекста понятно, о каком именно угле идёт речь.
+        </p>
+      
+        <p class="article__text">
+          Углы можно обозначать по-разному:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            символом «∠ABC» (где \( B \) — вершина),
+          </li>
+          <li class="article__text">
+            греческими буквами: \( \alpha \), \( \beta \), \( \varphi \), \( \theta \) и другими.
+          </li>
+        </ul>
+      
+        <h3 class="article__subheader">
+          Положительные и отрицательные углы
+        </h3>
+      
+        <p class="article__text">
+          Углы бывают не только разной величины, но и разного направления!
+        </p>
+      
+        <p class="article__text">
+          Обычно угол отсчитывается <b>против часовой стрелки</b> — это считается <b>положительным направлением</b>. Если же повернуть угол <b>по часовой стрелке</b>, он становится <b>отрицательным</b>. Например, если угол \( \varphi = 45^\circ \), то угол в противоположную сторону будет \( -45^\circ \).
+        </p>
+      
+        <p class="article__text">
+          В большинстве задач направление угла не играет роли — главное его значение. Но в некоторых случаях, особенно в физике, важно учитывать знак.
+        </p>
+      
+        <h3 class="article__subheader">
+          Как измеряют углы?
+        </h3>
+      
+        <p class="article__text">
+          Углы можно измерять в разных единицах:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Градусах</b> (°): всем знакомая система. Полный круг — 360°, прямой угол — 90°, развёрнутый — 180°.
+          </li>
+          <li class="article__text">
+            <b>Радианах</b> (рад): более "математическая" единица, которую часто используют в тригонометрии.
+          </li>
+          <li class="article__text">
+            Иногда ещё встречаются <b>грады</b>, но это уже редкость.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Градусы просты и интуитивно понятны, но радианы удобнее для работы с формулами. Почему? Разберёмся!
+        </p>
+      
+        <h3 class="article__subheader">
+          Радианная мера угла
+        </h3>
+      
+        <p class="article__text">
+          <b>Что такое радиан?</b>
+        </p>
+      
+        <p class="article__text">
+          <b>1 радиан</b> — это такой угол, при котором длина дуги окружности равна её радиусу.
+        </p>
+      
+        <p class="article__text">
+          Если нарисовать окружность с радиусом \( R \) и взять дугу такой же длины, то угол, опирающийся на эту дугу, будет равен <b>1 радиану</b>.
+        </p>
+      
+        <p class="article__formula">
+          \[\text{радианы} = \frac{\text{длина дуги}}{\text{радиус}}\]
+        </p>
+      
+        <p class="article__text">
+          <b>Сколько радиан в известных углах?</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            В развёрнутом угле (180°):
+            <p class="article__formula">
+              \[\pi \text{ радиан} \approx 3{,}14\]
+            </p>
+          </li>
+          <li class="article__text">
+            В полном круге (360°):
+            <p class="article__formula">
+              \[2\pi \text{ радиан} \approx 6{,}28\]
+            </p>
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Это значит, что \( 180^\circ = \pi \) радиан, а \( 360^\circ = 2\pi \) радиан. Просто запомните: полный круг — это \( 2\pi \), а половина круга — это \( \pi \).
+        </p>
+      
+        <h3 class="article__subheader">
+          Как переводить градусы в радианы и обратно?
+        </h3>
+      
+        <p class="article__text">
+          Чтобы работать в тригонометрии, часто нужно переводить градусы в радианы и наоборот. Это проще, чем кажется!
+        </p>
+      
+        <p class="article__text">
+          <b>Формулы перевода:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Из <b>градусов в радианы</b>:
+            <p class="article__formula">
+              \[\text{Радианы} = \frac{\pi}{180^\circ} \cdot x^\circ\]
+            </p>
+          </li>
+          <li class="article__text">
+            Из <b>радианов в градусы</b>:
+            <p class="article__formula">
+              \[\text{Градусы} = \frac{180^\circ}{\pi} \cdot x\]
+            </p>
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Примеры:</b>
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            \( 60^\circ \) в радианах:
+            <p class="article__formula">
+              \[\text{Радианы} = \frac{\pi}{180^\circ} \cdot 60^\circ = \frac{\pi}{3}\]
+            </p>
+          </li>
+          <li class="article__text">
+            \( \frac{\pi}{4} \) радиан в градусах:
+            <p class="article__formula">
+              \[\text{Градусы} = \frac{180^\circ}{\pi} \cdot \frac{\pi}{4} = 45^\circ\]
+            </p>
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          Итог
+        </h3>
+      
+        <p class="article__text">
+          В тригонометрии <b>почти всегда</b> используют радианы. Даже если в задаче даны градусы, почти наверняка придётся <b>перевести их в радианы</b>, прежде чем подставлять в формулы. Поэтому формулу перевода лучше выучить — она вам точно пригодится!
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

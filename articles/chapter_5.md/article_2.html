@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Треугольники: основы и важные свойства
+        </h2>
+      
+        <p class="article__text">
+          Треугольник — одна из самых простых, но в то же время удивительных фигур в геометрии. Изучая треугольники, мы не только погружаемся в мир математики, но и открываем для себя законы, которые работают в реальной жизни: от архитектуры до физики. Давайте разберёмся, что такое треугольники, их виды и важные свойства.
+        </p>
+      
+        <h3 class="article__subheader">
+          1. Понятие треугольника
+        </h3>
+      
+        <p class="article__text">
+          Треугольник — это фигура, состоящая из трёх точек (вершин), которые не лежат на одной прямой, и трёх отрезков, соединяющих эти точки. Обозначается треугольник значком \( \triangle \) и тремя буквами, например, \( \triangle ABC \).
+        </p>
+      
+        <p class="article__text">
+          <b>Главное правило треугольника:</b>  
+          Сумма всех его углов всегда равна \( 180^\circ \) (или \( \pi \) радиан). Это правило работает для любого треугольника, независимо от его вида.
+        </p>
+      
+        <p class="article__text">
+          <b>Основные элементы треугольника:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Высота</b>: это перпендикуляр, опущенный из вершины треугольника на противоположную сторону (или её продолжение). В треугольнике есть три высоты, и они всегда пересекаются в одной точке.
+          </li>
+          <li class="article__text">
+            <b>Медиана</b>: это отрезок, который соединяет вершину треугольника с серединой противоположной стороны. Медианы тоже пересекаются в одной точке, которая делит каждую медиану в отношении \( 2:1 \) (ближе к вершине).
+          </li>
+          <li class="article__text">
+            <b>Биссектриса</b>: это луч, который делит угол пополам. Биссектрисы всех углов треугольника также пересекаются в одной точке.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Площадь треугольника:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S = \frac{1}{2} \cdot a \cdot h
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( a \) — длина стороны, а \( h \) — высота, опущенная на эту сторону.
+        </p>
+      
+        <h3 class="article__subheader">
+          2. Равнобедренный треугольник
+        </h3>
+      
+        <p class="article__text">
+          Равнобедренный треугольник — это треугольник, у которого две стороны равны. Эти равные стороны называются <b>боковыми сторонами</b>, а третья сторона — <b>основанием</b>.
+        </p>
+      
+        <p class="article__text">
+          <b>Основные свойства:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Высота, проведённая к основанию, одновременно является <b>медианой</b> и <b>биссектрисой</b>. Это значит, что она делит основание пополам и угол при вершине на два равных угла.
+          </li>
+          <li class="article__text">
+            Углы при основании равнобедренного треугольника всегда равны.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Пример: если у треугольника две стороны равны \( 5 \), а основание \( 6 \), то углы при основании будут одинаковыми.
+        </p>
+      
+        <h3 class="article__subheader">
+          3. Равносторонний треугольник
+        </h3>
+      
+        <p class="article__text">
+          Равносторонний треугольник — это треугольник, у которого все три стороны равны. Такой треугольник ещё называют <b>правильным</b>.
+        </p>
+      
+        <p class="article__text">
+          <b>Основные свойства:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Все углы равны и составляют \( 60^\circ \) (или \( \frac{\pi}{3} \) радиан).
+          </li>
+          <li class="article__text">
+            Любая высота в равностороннем треугольнике одновременно является <b>медианой</b> и <b>биссектрисой</b>.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Пример: если сторона равностороннего треугольника равна \( 4 \), то все его углы будут \( 60^\circ \), а площадь можно вычислить по формуле:
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S = \frac{\sqrt{3}}{4} \cdot a^2
+          \]
+        </p>
+      
+        <h3 class="article__subheader">
+          4. Прямоугольный треугольник и теорема Пифагора
+        </h3>
+      
+        <p class="article__text">
+          Прямоугольный треугольник — это треугольник, у которого один из углов равен \( 90^\circ \). Два других угла обязательно острые.
+        </p>
+      
+        <p class="article__text">
+          <b>Стороны прямоугольного треугольника:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Гипотенуза</b>: это самая длинная сторона, лежащая напротив прямого угла.
+          </li>
+          <li class="article__text">
+            <b>Катеты</b>: это две другие стороны, образующие прямой угол.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Теорема Пифагора:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          a^2 + b^2 = c^2
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( a \) и \( b \) — катеты, а \( c \) — гипотенуза.
+        </p>
+      
+        <p class="article__text">
+          Пример: если катеты равны \( 3 \) и \( 4 \), то гипотенуза будет:
+        </p>
+      
+        <p class="article__formula">
+          \[
+          c = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = 5
+          \]
+        </p>
+      
+        <h3 class="article__subheader">
+          5. Синус, косинус, тангенс и котангенс острого угла
+        </h3>
+      
+        <p class="article__text">
+          Эти функции помогают описать соотношения между сторонами прямоугольного треугольника. Они зависят только от угла, а не от размеров треугольника.
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Синус (\( \sin \))</b>: отношение противолежащего катета к гипотенузе:
+            \[
+            \sin(\theta) = \frac{\text{противолежащий катет}}{\text{гипотенуза}}
+            \]
+          </li>
+          <li class="article__text">
+            <b>Косинус (\( \cos \))</b>: отношение прилежащего катета к гипотенузе:
+            \[
+            \cos(\theta) = \frac{\text{прилежащий катет}}{\text{гипотенуза}}
+            \]
+          </li>
+          <li class="article__text">
+            <b>Тангенс (\( \tan \))</b>: отношение противолежащего катета к прилежащему:
+            \[
+            \tan(\theta) = \frac{\text{противолежащий катет}}{\text{прилежащий катет}}
+            \]
+          </li>
+          <li class="article__text">
+            <b>Котангенс (\( \cot \))</b>: отношение прилежащего катета к противолежащему:
+            \[
+            \cot(\theta) = \frac{\text{прилежащий катет}}{\text{противолежащий катет}}
+            \]
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Пример: если в треугольнике катеты равны \( 3 \) и \( 4 \), а гипотенуза \( 5 \), то:
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \sin(\theta) = \frac{3}{5}, \quad \cos(\theta) = \frac{4}{5}, \quad \tan(\theta) = \frac{3}{4}
+          \]
+        </p>
+      
+        <h3 class="article__subheader">
+          6. Подобные треугольники
+        </h3>
+      
+        <p class="article__text">
+          Подобные треугольники — это треугольники, у которых соответствующие углы равны, а стороны пропорциональны. Иными словами, такие треугольники имеют одинаковую форму, но могут отличаться по размеру.
+        </p>
+      
+        <p class="article__text">
+          <b>Основное свойство подобных треугольников:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          \frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( a_1, b_1, c_1 \) — стороны одного треугольника, а \( a_2, b_2, c_2 \) — стороны другого треугольника.
+        </p>
+      
+        <p class="article__text">
+          <b>Коэффициент подобия:</b>
+        </p>
+      
+        <p class="article__text">
+          Это число, которое показывает, во сколько раз стороны одного треугольника больше или меньше сторон другого. Например, если коэффициент подобия \( k = 2 \), то все стороны второго треугольника в два раза больше.
+        </p>
+      
+        <p class="article__text">
+          Пример: представьте матрёшки. Каждая следующая матрёшка подобна предыдущей, но меньше её в определённое число раз. То же самое происходит с треугольниками!
+        </p>
+      
+        <h3 class="article__subheader">
+          Заключение
+        </h3>
+      
+        <p class="article__text">
+          Треугольники — это базовые фигуры, которые встречаются повсюду: в природе, искусстве и технике. Теперь вы знаете их основные виды (равнобедренный, равносторонний, прямоугольный), важные свойства и формулы. Это ваш первый шаг к более сложным задачам геометрии!
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

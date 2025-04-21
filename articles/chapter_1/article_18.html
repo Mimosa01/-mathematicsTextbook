@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Арифметическая прогрессия
+        </h2>
+      
+        <p class="article__text">
+          Арифметическая прогрессия — это последовательность чисел, где каждое следующее число отличается от предыдущего на одно и то же значение, называемое <b>разностью</b>. Давайте разберёмся, как она устроена, и научимся решать задачи с ней.
+        </p>
+      
+        <h3 class="article__subheader">
+          Что такое арифметическая прогрессия?
+        </h3>
+      
+        <p class="article__text">
+          Арифметическая прогрессия — это последовательность чисел, в которой:  
+          <p class="article__formula">
+            \[
+            a_{n+1} = a_n + d,
+            \]
+          </p>
+          где:  
+          - \( a_n \) — текущий член прогрессии,  
+          - \( a_{n+1} \) — следующий член прогрессии,  
+          - \( d \) — разность прогрессии (постоянное число).
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>  
+          \[
+          -8,\ -3,\ 2,\ 7,\ 12,\ 17,\ 22,\ 27,\ \ldots
+          \]  
+          Здесь разность прогрессии \( d = 5 \), так как каждый следующий член больше предыдущего на 5.
+        </p>
+      
+        <h3 class="article__subheader">
+          Формула \( n \)-го члена арифметической прогрессии
+        </h3>
+      
+        <p class="article__text">
+          Чтобы найти \( n \)-й член прогрессии, используйте формулу:  
+          <p class="article__formula">
+            \[
+            a_n = a_1 + (n - 1) \cdot d,
+            \]
+          </p>
+          где:  
+          - \( a_n \) — \( n \)-й член прогрессии,  
+          - \( a_1 \) — первый член прогрессии,  
+          - \( d \) — разность прогрессии,  
+          - \( n \) — номер члена.
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>  
+          Найдём 20-й член прогрессии, где \( a_1 = -8 \) и \( d = 5 \):  
+          <p class="article__formula">
+            \[
+            a_{20} = -8 + (20 - 1) \cdot 5 = -8 + 95 = 87.
+            \]
+          </p>
+        </p>
+      
+        <h3 class="article__subheader">
+          Сумма первых \( n \) членов арифметической прогрессии
+        </h3>
+      
+        <p class="article__text">
+          Сумму первых \( n \) членов можно вычислить по формуле:  
+          <p class="article__formula">
+            \[
+            S_n = \frac{n}{2} \cdot (a_1 + a_n),
+            \]
+          </p>
+          где:  
+          - \( S_n \) — сумма первых \( n \) членов,  
+          - \( a_1 \) — первый член прогрессии,  
+          - \( a_n \) — \( n \)-й член прогрессии.
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>  
+          Найдём сумму первых 50 членов прогрессии, где \( a_1 = -8 \) и \( d = 5 \):
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            Сначала найдём 50-й член:  
+            <p class="article__formula">
+              \[
+              a_{50} = -8 + (50 - 1) \cdot 5 = -8 + 245 = 237.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            Теперь найдём сумму:  
+            <p class="article__formula">
+              \[
+              S_{50} = \frac{50}{2} \cdot (-8 + 237) = 25 \cdot 229 = 5725.
+              \]
+            </p>
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          Альтернативная формула суммы через разность
+        </h3>
+      
+        <p class="article__text">
+          Если \( a_n \) неизвестен, сумму первых \( n \) членов можно вычислить по формуле:  
+          <p class="article__formula">
+            \[
+            S_n = \frac{n}{2} \cdot [2a_1 + (n - 1)d].
+            \]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>  
+          Используя предыдущие данные (\( a_1 = -8 \), \( d = 5 \), \( n = 50 \)):  
+          <p class="article__formula">
+            \[
+            S_{50} = \frac{50}{2} \cdot [2 \cdot (-8) + (50 - 1) \cdot 5] = 25 \cdot [-16 + 245] = 25 \cdot 229 = 5725.
+            \]
+          </p>
+        </p>
+      
+        <h3 class="article__subheader">
+          Интерактивная анимация
+        </h3>
+      
+        <p class="article__text">
+          [Предлагаю создать интерактивную анимацию, где пользователь может вводить значения первого члена \( a_1 \), разности \( d \) и номера члена \( n \). Анимация будет отображать построение прогрессии на числовой прямой, выделяя каждый член и показывая, как вычисляется \( a_n \) и сумма \( S_n \). Пользователь сможет изменять параметры и наблюдать изменения в прогрессии в реальном времени.]
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

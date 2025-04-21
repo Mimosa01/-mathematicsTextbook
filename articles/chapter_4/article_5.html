@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Важные тригонометрические факты и формулы: ваш путеводитель по миру тригонометрии
+        </h2>
+      
+        <p class="article__text">
+          Тригонометрия — это не просто набор формул. Это мощный инструмент, который помогает решать задачи в математике, физике и даже в реальной жизни (например, при расчёте траекторий или звуковых волн). Чтобы чувствовать себя уверенно, нужно запомнить несколько ключевых фактов и формул. Давайте разберём их шаг за шагом!
+        </p>
+      
+        <h3 class="article__subheader">
+          Нечётность синуса и чётность косинуса
+        </h3>
+      
+        <p class="article__text">
+          Одно из самых важных свойств тригонометрических функций — это <b>нечётность синуса</b> и <b>чётность косинуса</b>. Что это значит?
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Синус "не любит" минусы: если угол отрицательный, синус тоже становится отрицательным:
+            <p class="article__formula">
+              \[\sin(-\alpha) = -\sin(\alpha)\]
+            </p>
+          </li>
+          <li class="article__text">
+            Косинус, наоборот, "терпит" минусы: знак угла ему безразличен:
+            <p class="article__formula">
+              \[\cos(-\alpha) = \cos(\alpha)\]
+            </p>
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Эти свойства очень полезны, когда нужно упростить выражения. Например:
+          <p class="article__formula">
+            \[\sin(-\alpha) = -\sin(\alpha) \quad \text{и} \quad \cos(-\alpha) = \cos(\alpha)\]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          Минус можно "спрятать" обратно под функцию:
+          <p class="article__formula">
+            \[\sin(\alpha) = -\sin(-\alpha) \quad \text{или} \quad \cos(\alpha) = \cos(-\alpha)\]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          <b>Важно:</b> Эти преобразования не меняют саму функцию, а лишь её запись. Например, \( \sin(-\alpha) \) и \( -\sin(\alpha) \) — это одно и то же, просто записанное по-разному.
+        </p>
+      
+        <h3 class="article__subheader">
+          Основное тригонометрическое тождество
+        </h3>
+      
+        <p class="article__text">
+          Это самая важная формула тригонометрии, которую нужно знать <b>наизусть</b>:
+          <p class="article__formula">
+            \[\sin^2(\alpha) + \cos^2(\alpha) = 1\]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          Это тождество работает для любого угла \( \alpha \), даже если он сложный. Например:
+          <p class="article__formula">
+            \[\sin^2(x + y) + \cos^2(x + y) = 1\]
+          </p>
+          или
+          <p class="article__formula">
+            \[\sin^2(f(x)) + \cos^2(f(x)) = 1\]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          Из этого тождества можно вывести множество других формул, которые пригодятся в задачах.
+        </p>
+      
+        <h3 class="article__subheader">
+          Тангенс и котангенс: взаимосвязь
+        </h3>
+      
+        <p class="article__text">
+          Тангенс и котангенс — это две стороны одной медали. Они связаны через синус и косинус:
+          <p class="article__formula">
+            \[\tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)} \quad \text{и} \quad \cot(\alpha) = \frac{\cos(\alpha)}{\sin(\alpha)}\]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          Кроме того, они являются взаимно обратными:
+          <p class="article__formula">
+            \[\tan(\alpha) = \frac{1}{\cot(\alpha)}\]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          Эта связь помогает упрощать выражения и переходить от одной функции к другой.
+        </p>
+      
+        <h3 class="article__subheader">
+          Выражение синуса через косинус и наоборот
+        </h3>
+      
+        <p class="article__text">
+          Из основного тригонометрического тождества можно выразить синус через косинус и наоборот:
+          <p class="article__formula">
+            \[\sin(\alpha) = \pm \sqrt{1 - \cos^2(\alpha)}\]
+          </p>
+          <p class="article__formula">
+            \[\cos(\alpha) = \pm \sqrt{1 - \sin^2(\alpha)}\]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          Как выбрать знак (\( + \) или \( - \))? Это зависит от того, в какой четверти находится угол \( \alpha \). Об этом мы поговорим позже, при изучении тригонометрических неравенств.
+        </p>
+      
+        <h3 class="article__subheader">
+          Разделение на квадрат и другие полезные формулы
+        </h3>
+      
+        <p class="article__text">
+          Если разделить основное тригонометрическое тождество на \( \sin^2(\alpha) \) или \( \cos^2(\alpha) \), получим новые формулы:
+          <p class="article__formula">
+            \[\frac{1}{\sin^2(\alpha)} = \csc^2(\alpha)\]
+          </p>
+          <p class="article__formula">
+            \[\frac{1}{\cos^2(\alpha)} = \sec^2(\alpha)\]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          Не путайте записи \( \sin^2(\alpha) \) и \( (\sin(\alpha))^2 \)! В первом случае квадрат относится к значению функции, а во втором — к её аргументу. Это разные вещи:
+          <p class="article__formula">
+            \[\sin^2(\alpha) \neq \sin(\alpha)^2\]
+          </p>
+        </p>
+      
+        <h3 class="article__subheader">
+          Формулы двойного угла
+        </h3>
+      
+        <p class="article__text">
+          Формулы двойного угла часто используются для упрощения выражений. Вот самые популярные из них:
+          <p class="article__formula">
+            \[\sin(2\alpha) = 2\sin(\alpha)\cos(\alpha)\]
+          </p>
+          <p class="article__formula">
+            \[\cos(2\alpha) = \cos^2(\alpha) - \sin^2(\alpha)\]
+          </p>
+          <p class="article__formula">
+            \[\tan(2\alpha) = \frac{2\tan(\alpha)}{1 - \tan^2(\alpha)}\]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          Эти формулы особенно полезны при решении уравнений и упрощении сложных выражений.
+        </p>
+      
+        <h3 class="article__subheader">
+          Формулы понижения степени
+        </h3>
+      
+        <p class="article__text">
+          Если вам нужно избавиться от квадратов в выражениях, используйте формулы понижения степени:
+          <p class="article__formula">
+            \[\sin^2(\alpha) = \frac{1 - \cos(2\alpha)}{2}\]
+          </p>
+          <p class="article__formula">
+            \[\cos^2(\alpha) = \frac{1 + \cos(2\alpha)}{2}\]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          Эти формулы часто применяются в высшей математике, например, при работе с интегралами.
+        </p>
+      
+        <h3 class="article__subheader">
+          Формулы для суммы углов
+        </h3>
+      
+        <p class="article__text">
+          Для произвольных углов \( \alpha \) и \( \beta \) существуют формулы, которые помогают работать с их суммой:
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            <b>Синус суммы углов</b>:
+            <p class="article__formula">
+              \[\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)\]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Косинус суммы углов</b>:
+            <p class="article__formula">
+              \[\cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)\]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Тангенс суммы углов</b>:
+            <p class="article__formula">
+              \[\tan(\alpha + \beta) = \frac{\tan(\alpha) + \tan(\beta)}{1 - \tan(\alpha)\tan(\beta)}\]
+            </p>
+          </li>
+        </ol>
+      
+        <p class="article__text">
+          Эти формулы также можно использовать в обратном направлении, чтобы упростить сложные выражения.
+        </p>
+      
+        <h3 class="article__subheader">
+          Заключение
+        </h3>
+      
+        <p class="article__text">
+          Запомните эти формулы — они станут вашими надёжными помощниками в мире тригонометрии. Со временем вы будете применять их автоматически, и это значительно упростит решение задач. Удачи в изучении!
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

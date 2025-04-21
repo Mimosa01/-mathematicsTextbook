@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Понятие уравнения. Простейшие примеры
+        </h2>
+      
+        <p class="article__text">
+          Уравнение — это как загадка, где нужно найти неизвестное число (переменную), чтобы равенство стало верным. Давайте разберёмся, что такое уравнение, как его решать и сколько корней оно может иметь.
+        </p>
+      
+        <h3 class="article__subheader">
+          Что такое уравнение?
+        </h3>
+      
+        <p class="article__text">
+          <b>Уравнение</b> — это математическое равенство, содержащее переменную (или переменные). Оно состоит из:  
+          - <b>Левой части</b>: выражение слева от знака равенства (\( = \)).  
+          - <b>Правой части</b>: выражение справа от знака равенства.
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>  
+          <p class="article__formula">
+            \[
+            x + 3 = 7
+            \]
+          </p>
+          Здесь переменная \( x \) — это неизвестное значение, которое нужно найти.
+        </p>
+      
+        <h3 class="article__subheader">
+          Что такое корень уравнения?
+        </h3>
+      
+        <p class="article__text">
+          <b>Корень уравнения</b> — это значение переменной, при котором уравнение становится верным числовым равенством.
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>  
+          Рассмотрим уравнение:  
+          <p class="article__formula">
+            \[
+            x + 3 = 7
+            \]
+          </p>
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            Подставим \( x = 4 \):  
+            <p class="article__formula">
+              \[
+              4 + 3 = 7 \quad \Rightarrow \quad 7 = 7
+              \]
+            </p>
+            Верное равенство, значит, \( x = 4 \) — корень уравнения.
+          </li>
+          <li class="article__text">
+            Подставим \( x = 0 \):  
+            <p class="article__formula">
+              \[
+              0 + 3 = 3 \quad \Rightarrow \quad 3 \neq 7
+              \]
+            </p>
+            Неверное равенство, значит, \( x = 0 \) не является корнем уравнения.
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          Сколько корней может иметь уравнение?
+        </h3>
+      
+        <p class="article__text">
+          Уравнение может иметь:
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            <b>Один корень:</b>  
+            <p class="article__formula">
+              \[
+              x + 3 = 7 \quad \Rightarrow \quad x = 4
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Несколько корней:</b>  
+            <p class="article__formula">
+              \[
+              x^2 = 4 \quad \Rightarrow \quad x = 2 \text{ или } x = -2
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Бесконечно много корней:</b>  
+            <p class="article__formula">
+              \[
+              2x = 2x \quad \Rightarrow \quad \text{верно при любом } x.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Нет корней:</b>  
+            <p class="article__formula">
+              \[
+              x^2 + 1 = 0 \quad \Rightarrow \quad \text{нет действительных корней, так как } x^2 + 1 > 0 \text{ для всех } x.
+              \]
+            </p>
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          Решение уравнения
+        </h3>
+      
+        <p class="article__text">
+          <b>Решить уравнение</b> — значит найти все его корни или доказать, что их не существует.
+        </p>
+      
+        <p class="article__text">
+          <b>Примеры:</b>
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            Уравнение \( x^2 = 4 \):  
+            <p class="article__formula">
+              \[
+              x = 2 \quad \text{и} \quad x = -2
+              \]
+            </p>
+            Это два корня уравнения.
+          </li>
+          <li class="article__text">
+            Уравнение \( x^2 + 1 = 0 \):  
+            <p class="article__formula">
+              \[
+              x^2 = -1 \quad \Rightarrow \quad \text{нет действительных корней}.
+              \]
+            </p>
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          Интерактивная анимация
+        </h3>
+      
+        <p class="article__text">
+          [Предлагаю создать интерактивную анимацию, где пользователь может вводить уравнение, а система пошагово показывает процесс решения: подстановку значений, проверку равенства, нахождение корней. Пользователь сможет изменять уравнение и наблюдать изменения в решении в реальном времени.]
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

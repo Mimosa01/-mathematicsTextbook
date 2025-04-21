@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Основные пространственные фигуры: от плоскости до конуса
+        </h2>
+      
+        <p class="article__text">
+          Геометрия в пространстве — это не только теория, но и то, что нас окружает в реальной жизни. Кубики, мячи, банки, пирамиды — всё это примеры пространственных фигур. Давайте разберёмся, какие бывают объёмные фигуры, как их описать и как вычислить их площадь и объём.
+        </p>
+      
+        <h3 class="article__subheader">
+          Плоскость
+        </h3>
+      
+        <p class="article__text">
+          <b>Плоскость</b> — это бесконечная двумерная поверхность, на которой можно разместить точки, прямые, треугольники и другие фигуры. Представьте её как огромный лист бумаги, который простирается во все стороны без границ.
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Обозначение плоскости:</b> обычно обозначается греческой буквой, например \( \sigma \), \( \alpha \) или \( \beta \).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Плоскость может быть расположена под любым углом в пространстве. Например, пол в комнате — это горизонтальная плоскость, а стенка шкафа — вертикальная.
+        </p>
+      
+        <h3 class="article__subheader">
+          Призма
+        </h3>
+      
+        <p class="article__text">
+          <b>Призма</b> — это многогранник, у которого два одинаковых многоугольника (основания) лежат в параллельных плоскостях, а боковые грани — параллелограммы.
+        </p>
+      
+        <p class="article__text">
+          <b>Треугольная призма:</b>
+        </p>
+      
+        <p class="article__text">
+          Если основаниями призмы являются треугольники, то такая призма называется <b>треугольной</b>. Боковые грани — это прямоугольники.
+        </p>
+      
+        <p class="article__text">
+          <b>Объём треугольной призмы:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          V = S_{\text{основания}} \times h
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( S_{\text{основания}} \) — площадь треугольника, а \( h \) — высота призмы.
+        </p>
+      
+        <p class="article__text">
+          <b>Параллелепипед:</b>
+        </p>
+      
+        <p class="article__text">
+          Если основаниями призмы являются параллелограммы, то мы получаем <b>параллелепипед</b>. Пример: коробка из-под обуви.
+        </p>
+      
+        <p class="article__text">
+          <b>Объём параллелепипеда:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          V = a \cdot b \cdot c
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( a \), \( b \), \( c \) — длины сторон.
+        </p>
+      
+        <p class="article__text">
+          Если все рёбра равны, то фигура становится <b>кубом</b>, и его объём:
+        </p>
+      
+        <p class="article__formula">
+          \[
+          V = a^3
+          \]
+        </p>
+      
+        <h3 class="article__subheader">
+          Пирамида
+        </h3>
+      
+        <p class="article__text">
+          <b>Пирамида</b> — это многогранник, у которого одна грань (основание) — многоугольник, а остальные грани — треугольники, сходящиеся в одной точке (вершине).
+        </p>
+      
+        <p class="article__text">
+          <b>Треугольная пирамида (тетраэдр):</b>
+        </p>
+      
+        <p class="article__text">
+          Если основание — треугольник, то пирамида называется <b>треугольной пирамидой</b> или <b>тетраэдром</b>.
+        </p>
+      
+        <p class="article__text">
+          <b>Объём пирамиды:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          V = \frac{1}{3} \cdot S_{\text{основания}} \cdot h
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( S_{\text{основания}} \) — площадь основания, а \( h \) — высота пирамиды.
+        </p>
+      
+        <p class="article__text">
+          Пример: египетские пирамиды — это четырёхугольные пирамиды!
+        </p>
+      
+        <h3 class="article__subheader">
+          Сфера и шар
+        </h3>
+      
+        <p class="article__text">
+          <b>Сфера:</b>
+        </p>
+      
+        <p class="article__text">
+          <b>Сфера</b> — это множество точек, равноудалённых от центра. Радиус обозначается \( r \). Пример: футбольный мяч.
+        </p>
+      
+        <p class="article__text">
+          <b>Площадь поверхности сферы:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S = 4\pi r^2
+          \]
+        </p>
+      
+        <p class="article__text">
+          <b>Шар:</b>
+        </p>
+      
+        <p class="article__text">
+          <b>Шар</b> — это тело, ограниченное сферой. Пример: апельсин.
+        </p>
+      
+        <p class="article__text">
+          <b>Объём шара:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          V = \frac{4}{3} \pi r^3
+          \]
+        </p>
+      
+        <h3 class="article__subheader">
+          Цилиндр
+        </h3>
+      
+        <p class="article__text">
+          <b>Цилиндр</b> — это фигура, состоящая из двух кругов (оснований) и боковой поверхности, которая соединяет эти круги. Пример: банка из-под газировки.
+        </p>
+      
+        <p class="article__text">
+          <b>Площадь боковой поверхности:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S_{\text{боковой}} = 2\pi r h
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( r \) — радиус основания, а \( h \) — высота цилиндра.
+        </p>
+      
+        <p class="article__text">
+          <b>Площадь всей поверхности:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S_{\text{поверхности}} = 2\pi r h + 2\pi r^2
+          \]
+        </p>
+      
+        <p class="article__text">
+          <b>Объём цилиндра:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          V = \pi r^2 h
+          \]
+        </p>
+      
+        <h3 class="article__subheader">
+          Конус
+        </h3>
+      
+        <p class="article__text">
+          <b>Конус</b> — это фигура, состоящая из круга (основания) и множества отрезков, которые соединяют точки окружности с вершиной. Пример: мороженое в вафельном рожке.
+        </p>
+      
+        <p class="article__text">
+          <b>Прямой круговой конус:</b>
+        </p>
+      
+        <p class="article__text">
+          Если вершина находится прямо над центром основания, то конус называется <b>прямым круговым</b>.
+        </p>
+      
+        <p class="article__text">
+          <b>Длина образующей (\( l \)):</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          l = \sqrt{r^2 + h^2}
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( r \) — радиус основания, а \( h \) — высота конуса.
+        </p>
+      
+        <p class="article__text">
+          <b>Площадь боковой поверхности:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S_{\text{боковой}} = \pi r l
+          \]
+        </p>
+      
+        <p class="article__text">
+          <b>Площадь всей поверхности:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S_{\text{поверхности}} = \pi r l + \pi r^2
+          \]
+        </p>
+      
+        <p class="article__text">
+          <b>Объём конуса:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          V = \frac{1}{3} \pi r^2 h
+          \]
+        </p>
+      
+        <h3 class="article__subheader">
+          Примечания
+        </h3>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Разница между поверхностью и телом:</b>
+            <ul class="article__list">
+              <li class="article__text">
+                <b>Сфера</b> — это только поверхность, как оболочка мяча.
+              </li>
+              <li class="article__text">
+                <b>Шар</b> — это всё тело, включая внутреннее пространство.
+              </li>
+            </ul>
+          </li>
+          <li class="article__text">
+            <b>Единицы измерения:</b>
+            <ul class="article__list">
+              <li class="article__text">
+                Объём измеряется в кубических единицах (например, \( \text{м}^3 \)).
+              </li>
+              <li class="article__text">
+                Площадь измеряется в квадратных единицах (например, \( \text{м}^2 \)).
+              </li>
+            </ul>
+          </li>
+        </ul>
+      
+        <h3 class="article__subheader">
+          Заключение
+        </h3>
+      
+        <p class="article__text">
+          Мы разобрали основные пространственные фигуры: призму, пирамиду, сферу, шар, цилиндр и конус. Теперь вы знаете, как вычислить их площадь и объём, а также понимаете, чем они отличаются друг от друга. Эти знания помогут вам решать задачи и лучше понимать окружающий мир!
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

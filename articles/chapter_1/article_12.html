@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Одночлены, многочлены и другие члены
+        </h2>
+      
+        <p class="article__text">
+          Давайте разберёмся с одночленами и многочленами так, будто мы просто обсуждаем их за чашкой чая. Это не сложно, если понимать основные принципы.
+        </p>
+      
+        <h3 class="article__subheader">
+          Одночлен
+        </h3>
+      
+        <p class="article__text">
+          <b>Одночлен</b> — это как "атом" в математике. Это выражение, состоящее из числового множителя (коэффициента) и переменных, возведённых в целые неотрицательные степени. Примеры:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            \( 3x^2 \): здесь коэффициент \( 3 \), переменная \( x \), степень \( 2 \).
+          </li>
+          <li class="article__text">
+            \( -5y^3 \): коэффициент \( -5 \), переменная \( y \), степень \( 3 \).
+          </li>
+          <li class="article__text">
+            \( 7z \): коэффициент \( 7 \), переменная \( z \), степень \( 1 \) (ведь \( z = z^1 \)).
+          </li>
+          <li class="article__text">
+            \( 2 \): это тоже одночлен, только без переменных.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Степень одночлена</b> — это сумма всех показателей степеней переменных в нём. Например:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            \( 3x^2 \) — степень \( 2 \).
+          </li>
+          <li class="article__text">
+            \( 4x^3y^2 \) — степень \( 3 + 2 = 5 \).
+          </li>
+          <li class="article__text">
+            \( -x^2y^3z^4 \) — степень \( 2 + 3 + 4 = 9 \).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Если в выражении появляются корни, дроби или другие функции (например, \( \sqrt{x} \) или \( \sin(x) \)), то это уже <b>не одночлен</b>, а просто часть выражения.
+        </p>
+      
+        <h3 class="article__subheader">
+          Многочлен
+        </h3>
+      
+        <p class="article__text">
+          <b>Многочлен</b> — это сумма нескольких одночленов. Примеры:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            \( 3x^2 + 2x + 1 \): это трёхчлен (три одночлена).
+          </li>
+          <li class="article__text">
+            \( x^4 - 5x^2 + 3x - 7 \): это четырёхчлен (четыре одночлена).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Степень многочлена</b> — это максимальная степень его одночленов. Например:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            \( 3x^2 + 2x + 1 \): степень \( 2 \) (старший одночлен \( 3x^2 \)).
+          </li>
+          <li class="article__text">
+            \( x^4 - 5x^2 + 3x - 7 \): степень \( 4 \) (старший одночлен \( x^4 \)).
+          </li>
+        </ul>
+      
+        <h3 class="article__subheader">
+          Подобные члены
+        </h3>
+      
+        <p class="article__text">
+          <b>Подобными</b> называются одночлены, которые имеют одинаковые переменные с одинаковыми степенями. Например:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            \( 2x^2 \) и \( -3x^2 \) — подобные, потому что у них одинаковая переменная \( x \) и степень \( 2 \).
+          </li>
+          <li class="article__text">
+            \( 4xy \) и \( -xy \) — подобные, потому что у них одинаковые переменные \( x \) и \( y \) с одинаковыми степенями.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Неподобные члены нельзя складывать или вычитать. Например:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            \( 2x^2 \) и \( 3xy \) — неподобные, потому что переменные разные.
+          </li>
+        </ul>
+      
+        <h3 class="article__subheader">
+          Приведение подобных членов
+        </h3>
+      
+        <p class="article__text">
+          Чтобы упростить выражение, нужно сложить или вычесть только <b>подобные члены</b>. Неподобные оставляем без изменений.
+        </p>
+      
+        <p class="article__text">
+          Примеры:
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            \( 3x^2 + 2x^2 = 5x^2 \).  
+            Здесь \( 3x^2 \) и \( 2x^2 \) — подобные, их можно сложить.
+          </li>
+          <li class="article__text">
+            \( 4xy - 2xy = 2xy \).  
+            Здесь \( 4xy \) и \( -2xy \) — подобные, их можно вычесть.
+          </li>
+          <li class="article__text">
+            \( 3x^2 + 2x + 1 \): здесь ничего не складывается, потому что все члены неподобные.
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          Важные замечания
+        </h3>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Одночлен может быть просто числом (например, \( 5 \)) или переменной (например, \( x \)).
+          </li>
+          <li class="article__text">
+            Если многочлен состоит из одного одночлена, он называется <b>одночленом</b>.
+          </li>
+          <li class="article__text">
+            Если многочлен состоит из двух одночленов, он называется <b>двучленом</b>.
+          </li>
+          <li class="article__text">
+            Если многочлен состоит из трёх одночленов, он называется <b>трёхчленом</b>.
+          </li>
+          <li class="article__text">
+            Если многочлен состоит из четырёх одночленов, он называется <b>четырёхчленом</b>.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

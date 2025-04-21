@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Показательная функция: математика роста и убывания
+        </h2>
+      
+        <p class="article__text">
+          Показательная функция — это одна из самых интересных и полезных функций в математике. Она описывает процессы, где изменения происходят "в геометрической прогрессии", и встречается повсюду: от роста населения до радиоактивного распада. Давайте разберёмся, что это за функция и как она работает.
+        </p>
+      
+        <p class="article__text">
+          Общий вид показательной функции:
+          <p class="article__formula">
+            \[
+            y = a^x
+            \]
+          </p>
+          где \( a > 0 \) и \( a \ne 1 \).
+        </p>
+      
+        <p class="article__text">
+          Здесь \( a \) называется основанием, а \( x \) — показателем степени. В зависимости от значения \( a \), функция может вести себя по-разному:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Если \( a > 1 \), функция стремительно растёт.
+          </li>
+          <li class="article__text">
+            Если \( 0 < a < 1 \), функция плавно убывает.
+          </li>
+        </ul>
+      
+        <h2 class="article__subheader">
+          Основные свойства показательной функции
+        </h2>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            <b>Область определения</b>: \( x \in \mathbb{R} \). Это значит, что \( x \) может быть любым числом — положительным, отрицательным или нулём.
+          </li>
+          <li class="article__text">
+            <b>Область значений</b>: \( y > 0 \). Функция всегда остаётся выше оси X, то есть никогда не принимает отрицательных значений.
+          </li>
+          <li class="article__text">
+            <b>График проходит через точку</b>: \( (0, 1) \). Это легко проверить: \( a^0 = 1 \) для любого \( a > 0 \).
+          </li>
+          <li class="article__text">
+            <b>Асимптота</b>: ось X. График бесконечно приближается к оси X, но никогда её не пересекает.
+          </li>
+          <li class="article__text">
+            <b>Монотонность</b>:
+            - При \( a > 1 \): функция возрастает. Чем больше \( x \), тем быстрее растёт \( y \).  
+            - При \( 0 < a < 1 \): функция убывает. Чем больше \( x \), тем ближе \( y \) к нулю.
+          </li>
+          <li class="article__text">
+            <b>Нечётность/чётность</b>: функция не является ни чётной, ни нечётной. Это значит, что график не симметричен относительно осей.
+          </li>
+          <li class="article__text">
+            <b>Непрерывность</b>: функция плавная и не имеет разрывов на всей области определения.
+          </li>
+        </ol>
+      
+        <h2 class="article__subheader">
+          Пример: \( y = 2^x \)
+        </h2>
+      
+        <p class="article__text">
+          Давайте посмотрим, как выглядит график функции \( y = 2^x \). Для этого выберем несколько значений \( x \) и посчитаем соответствующие \( y \):
+          <p class="article__formula">
+            \[
+            \begin{align*}
+            x & : -2 & -1 & 0 & 1 & 2 \\
+            y & : 0.25 & 0.5 & 1 & 2 & 4
+            \end{align*}
+            \]
+          </p>
+          Что мы видим? Когда \( x \) становится больше, \( y \) растёт очень быстро. А когда \( x \) становится меньше, \( y \) приближается к нулю, но никогда его не достигает.
+        </p>
+      
+        <p class="article__text">
+          [**Интерактивная анимация:**  
+          Пользователь может изменять значение основания \( a \) с помощью ползунка (например, от 0.1 до 5). При изменении \( a \) автоматически обновляется график функции \( y = a^x \). Также отображаются координаты ключевых точек, таких как \( (0, 1) \), и асимптота. Это позволяет наглядно увидеть, как изменение основания влияет на форму графика.]
+        </p>
+      
+        <h2 class="article__subheader">
+          Пример: \( y = \left( \frac{1}{2} \right)^x \)
+        </h2>
+      
+        <p class="article__text">
+          Теперь рассмотрим случай, когда основание \( a = \frac{1}{2} \). Поскольку \( 0 < a < 1 \), функция будет убывать. Вот таблица значений:
+          <p class="article__formula">
+            \[
+            \begin{align*}
+            x & : -2 & -1 & 0 & 1 & 2 \\
+            y & : 4 & 2 & 1 & 0.5 & 0.25
+            \end{align*}
+            \]
+          </p>
+          Здесь всё наоборот: при увеличении \( x \) значения \( y \) становятся всё меньше и меньше, приближаясь к нулю.
+        </p>
+      
+        <p class="article__text">
+          [**Интерактивная анимация:**  
+          Аналогично предыдущей анимации, пользователь может изменять значение основания \( a \) в диапазоне от 0.1 до 1. При изменении \( a \) отображается соответствующий убывающий график функции \( y = a^x \). Это помогает понять, как изменение основания влияет на скорость убывания функции.]
+        </p>
+      
+        <h2 class="article__subheader">
+          Где применяется показательная функция?
+        </h2>
+      
+        <p class="article__text">
+          Показательная функция — настоящая звезда в мире реальных процессов. Она помогает описать явления, где изменения зависят от текущего состояния. Вот несколько примеров:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Экспоненциальный рост</b>: рост населения, распространение вирусов, начисление процентов на банковский счёт.
+          </li>
+          <li class="article__text">
+            <b>Экспоненциальное убывание</b>: радиоактивный распад, остывание горячего чая, амортизация оборудования.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          [**Интерактивная анимация:**  
+          Пользователь может выбрать различные реальные процессы (например, рост населения, охлаждение объекта) и видеть соответствующий график показательной функции. Также можно изменять параметры (например, скорость роста или убывания) и наблюдать, как это влияет на форму графика.]
+        </p>
+      
+        <h2 class="article__subheader">
+          Как решать показательные уравнения?
+        </h2>
+      
+        <p class="article__text">
+          Показательные уравнения — это уравнения, где неизвестное стоит в показателе степени. Они решаются довольно просто, если знать несколько правил.
+        </p>
+      
+        <p class="article__text">
+          Простейшие показательные уравнения имеют вид:
+          <p class="article__formula">
+            \[
+            a^x = b
+            \]
+          </p>
+        </p>
+      
+        <h3 class="article__subheader">
+          Шаг 1: Выразите обе стороны с одинаковым основанием
+        </h3>
+      
+        <p class="article__text">
+          Если это возможно, попробуйте записать обе части уравнения с одним и тем же основанием.
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>
+          <p class="article__formula">
+            \[
+            2^x = 8
+            \]
+          </p>
+          Заметим, что \( 8 = 2^3 \). Тогда уравнение примет вид:
+          <p class="article__formula">
+            \[
+            2^x = 2^3
+            \]
+          </p>
+          Следовательно, \( x = 3 \).
+        </p>
+      
+        <h3 class="article__subheader">
+          Шаг 2: Используйте логарифмы
+        </h3>
+      
+        <p class="article__text">
+          Если выразить обе стороны с одинаковым основанием невозможно, используйте логарифмы:
+          <p class="article__formula">
+            \[
+            a^x = b \Rightarrow x = \log_a b
+            \]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          [**Интерактивная анимация:**  
+          Пользователь вводит уравнение вида \( a^x = b \), и система пошагово показывает процесс решения: попытка выразить обе стороны с одинаковым основанием, применение логарифмов, вычисление значения \( x \). Это помогает понять методику решения показательных уравнений.]
+        </p>
+      
+        <p class="article__text">
+          Теперь вы знаете, как работают показательные функции и как их использовать для описания реальных процессов. Эта функция — мощный инструмент, который поможет вам разобраться в мире роста и убывания!
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

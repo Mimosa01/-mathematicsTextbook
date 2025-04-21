@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Логарифмы и логарифмическая функция: математика для любопытных
+        </h2>
+      
+        <p class="article__text">
+          Логарифмы — это не просто набор символов на бумаге. Они помогают нам решать задачи, которые кажутся сложными, и описывать процессы, где изменения происходят "в геометрической прогрессии". Давайте разберёмся с этой темой шаг за шагом!
+        </p>
+      
+        <h3 class="article__subheader">
+          Что такое логарифм?
+        </h3>
+      
+        <p class="article__text">
+          Представьте, что у вас есть число \( a \) (основание), и вы хотите узнать, в какую степень его возвести, чтобы получить другое число \( b \). Это и есть логарифм:
+        </p>
+      
+        <p class="article__formula">
+          \[\log_a b = x \quad \text{означает} \quad a^x = b\]
+        </p>
+      
+        <p class="article__text">
+          <b>Примеры:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            \( \log_2 8 = 3 \), потому что \( 2^3 = 8 \).
+          </li>
+          <li class="article__text">
+            \( \log_{10} 1000 = 3 \), потому что \( 10^3 = 1000 \).
+          </li>
+          <li class="article__text">
+            \( \log_5 1 = 0 \), потому что \( 5^0 = 1 \).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Важно:</b> Логарифм определён только для положительных чисел \( b \) и оснований \( a \), где \( a > 0 \) и \( a \ne 1 \). Без этих условий логарифм просто не имеет смысла.
+        </p>
+      
+        <h3 class="article__subheader">
+          Свойства логарифмов
+        </h3>
+      
+        <p class="article__text">
+          Логарифмы обладают замечательными свойствами, которые делают вычисления проще. Вот самые важные из них:
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            <b>Произведение:</b>
+            <p class="article__formula">
+              \[\log_a (bc) = \log_a b + \log_a c\]
+            </p>
+            Это правило говорит, что логарифм произведения равен сумме логарифмов.
+          </li>
+          <li class="article__text">
+            <b>Частное:</b>
+            <p class="article__formula">
+              \[\log_a \left( \frac{b}{c} \right) = \log_a b - \log_a c\]
+            </p>
+            Здесь логарифм частного равен разности логарифмов.
+          </li>
+          <li class="article__text">
+            <b>Степень:</b>
+            <p class="article__formula">
+              \[\log_a (b^p) = p \cdot \log_a b\]
+            </p>
+            Если число возводится в степень, то её можно "вынести" перед логарифмом.
+          </li>
+          <li class="article__text">
+            <b>Переход к новому основанию:</b>
+            <p class="article__formula">
+              \[\log_a b = \frac{\log_c b}{\log_c a}\]
+            </p>
+            Эта формула позволяет перейти от одного основания к другому. Например:
+            <p class="article__text">
+              \(\log_2 8 = \frac{\log_{10} 8}{\log_{10} 2}\).
+            </p>
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          ✏️ Логарифмирование и потенцирование
+        </h3>
+      
+        <p class="article__text">
+          <b>Что такое логарифмирование?</b>
+        </p>
+      
+        <p class="article__text">
+          Логарифмирование — это как "обратный ход" от возведения в степень. Если у нас есть уравнение:
+        </p>
+      
+        <p class="article__formula">
+          \[a^x = b\]
+        </p>
+      
+        <p class="article__text">
+          то чтобы найти \( x \), нужно взять логарифм от обеих частей:
+        </p>
+      
+        <p class="article__formula">
+          \[x = \log_a b\]
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[3^x = 81 \Rightarrow x = \log_3 81 = 4\]
+        </p>
+      
+        <p class="article__text">
+          Почему? Потому что \( 3^4 = 81 \).
+        </p>
+      
+        <p class="article__text">
+          <b>Что такое потенцирование?</b>
+        </p>
+      
+        <p class="article__text">
+          Потенцирование — это просто возведение в степень. Мы знаем основание и показатель степени, и находим результат:
+        </p>
+      
+        <p class="article__formula">
+          \[a^x = b\]
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[2^5 = 32\]
+        </p>
+      
+        <p class="article__text">
+          Здесь \( 2 \) — основание, \( 5 \) — показатель степени, \( 32 \) — результат.
+        </p>
+      
+        <p class="article__text">
+          <b>Как они связаны?</b>
+        </p>
+      
+        <p class="article__text">
+          Потенцирование и логарифмирование — это <b>взаимно обратные операции</b>, как сложение и вычитание или умножение и деление.
+        </p>
+      
+        <table class="article__table">
+          <tr>
+            <th>Потенцирование</th>
+            <th>Логарифмирование</th>
+          </tr>
+          <tr>
+            <td>\( a^x = b \)</td>
+            <td>\( \log_a b = x \)</td>
+          </tr>
+          <tr>
+            <td>Мы знаем \( a \) и \( x \), ищем \( b \).</td>
+            <td>Мы знаем \( a \) и \( b \), ищем \( x \).</td>
+          </tr>
+        </table>
+      
+        <h3 class="article__subheader">
+          Логарифмическая функция
+        </h3>
+      
+        <p class="article__text">
+          Функция вида \( y = \log_a x \) называется логарифмической. Её график зависит от значения основания \( a \):
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Если \( a > 1 \), функция возрастает.
+          </li>
+          <li class="article__text">
+            Если \( 0 < a < 1 \), функция убывает.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Свойства:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Область определения: \( x > 0 \).
+          </li>
+          <li class="article__text">
+            Область значений: все действительные числа.
+          </li>
+          <li class="article__text">
+            График всегда проходит через точку \( (1, 0) \), так как \( \log_a 1 = 0 \).
+          </li>
+        </ul>
+      
+        <h3 class="article__subheader">
+          Решение логарифмических уравнений и неравенств
+        </h3>
+      
+        <p class="article__text">
+          <b>Повторим: логарифмическое уравнение</b>
+        </p>
+      
+        <p class="article__text">
+          Уравнение, где переменная стоит <b>внутри логарифма</b>, или <b>в его основании</b>, называется логарифмическим.
+        </p>
+      
+        <p class="article__text">
+          <b>Пример:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[\log_2 x = 3 \Rightarrow x = 2^3 = 8\]
+        </p>
+      
+        <p class="article__text">
+          Главное при решении — <b>проверить ОДЗ</b> (область допустимых значений):
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Основание логарифма \( a > 0 \), \( a \ne 1 \).
+          </li>
+          <li class="article__text">
+            Выражение под логарифмом \( > 0 \).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Логарифмические неравенства</b>
+        </p>
+      
+        <p class="article__text">
+          Логарифмические неравенства содержат логарифмы:
+        </p>
+      
+        <p class="article__formula">
+          \[\log_a f(x) > \log_a g(x)\]
+        </p>
+      
+        <p class="article__text">
+          <b>Общий подход:</b>
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            Указать ОДЗ:
+            <ul class="article__list">
+              <li class="article__text">
+                \( f(x) > 0 \),
+              </li>
+              <li class="article__text">
+                \( g(x) > 0 \),
+              </li>
+              <li class="article__text">
+                \( a > 0 \), \( a \ne 1 \).
+              </li>
+            </ul>
+          </li>
+          <li class="article__text">
+            Упростить неравенство:
+            Если основания логарифмов одинаковые и положительные, то можно просто сравнивать аргументы, <b>с учётом того, какое основание</b>:
+            <ul class="article__list">
+              <li class="article__text">
+                Если \( a > 1 \): знак неравенства <b>сохраняется</b>.
+              </li>
+              <li class="article__text">
+                Если \( 0 < a < 1 \): знак <b>меняется на противоположный</b>.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          Примеры
+        </h3>
+      
+        <p class="article__text">
+          <b>Пример 1 (основание больше 1):</b>
+        </p>
+      
+        <p class="article__formula">
+          \[\log_3 (x + 1) > \log_3 (2x - 1)\]
+        </p>
+      
+        <p class="article__text">
+          <b>Решение:</b>
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            ОДЗ:
+            <ul class="article__list">
+              <li class="article__text">
+                \( x + 1 > 0 \Rightarrow x > -1 \),
+              </li>
+              <li class="article__text">
+                \( 2x - 1 > 0 \Rightarrow x > 0.5 \).
+              </li>
+            </ul>
+            Объединяем: \( x > 0.5 \).
+          </li>
+          <li class="article__text">
+            Поскольку \( \log_3 \) (основание \( > 1 \)), сравниваем аргументы:
+            <p class="article__formula">
+              \[x + 1 > 2x - 1 \Rightarrow -x > -2 \Rightarrow x < 2\]
+            </p>
+          </li>
+          <li class="article__text">
+            Учитываем ОДЗ:
+            Ответ: \( 0.5 < x < 2 \).
+          </li>
+        </ol>
+      
+        <p class="article__text">
+          <b>Пример 2 (основание меньше 1):</b>
+        </p>
+      
+        <p class="article__formula">
+          \[\log_{0.5} (x - 3) < \log_{0.5} (2x - 1)\]
+        </p>
+      
+        <p class="article__text">
+          <b>Решение:</b>
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            ОДЗ:
+            <ul class="article__list">
+              <li class="article__text">
+                \( x - 3 > 0 \Rightarrow x > 3 \),
+              </li>
+              <li class="article__text">
+                \( 2x - 1 > 0 \Rightarrow x > 0.5 \).
+              </li>
+            </ul>
+            Совместно: \( x > 3 \).
+          </li>
+          <li class="article__text">
+            Основание \( < 1 \), значит знак <b>меняется</b>:
+            <p class="article__formula">
+              \[x - 3 > 2x - 1 \Rightarrow -x > 2 \Rightarrow x < -2 \quad \text{(не попадает в ОДЗ)}.\]
+            </p>
+          </li>
+          <li class="article__text">
+            Ответ: нет решений.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

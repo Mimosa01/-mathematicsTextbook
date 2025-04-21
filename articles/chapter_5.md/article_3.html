@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Четырёхугольники: виды, свойства и формулы
+        </h2>
+      
+        <p class="article__text">
+          Четырёхугольники — это фигуры, которые состоят из четырёх точек (вершин) и четырёх отрезков, соединяющих эти точки. Они встречаются повсюду: в архитектуре, дизайне, природе и даже в вашем учебнике геометрии! Давайте разберёмся, какие бывают четырёхугольники, какими свойствами они обладают и как их площадь вычислять.
+        </p>
+      
+        <h3 class="article__subheader">
+          1. Параллелограмм
+        </h3>
+      
+        <p class="article__text">
+          <b>Параллелограмм</b> — это четырёхугольник, у которого противоположные стороны попарно параллельны. Представьте, что вы растягиваете прямоугольник, и его углы становятся острыми или тупыми. Вот вам и параллелограмм!
+        </p>
+      
+        <p class="article__text">
+          <b>Основные свойства:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Противоположные стороны равны: \( AB = CD \) и \( AD = BC \).
+          </li>
+          <li class="article__text">
+            Противоположные углы равны: \( \angle A = \angle C \), \( \angle B = \angle D \).
+          </li>
+          <li class="article__text">
+            Диагонали параллелограмма пересекаются в одной точке и делятся ею пополам.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Площадь параллелограмма</b> вычисляется так:
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S = a \cdot h
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( a \) — длина стороны, а \( h \) — высота, опущенная на эту сторону.
+        </p>
+      
+        <p class="article__text">
+          Пример: если сторона \( a = 6 \), а высота \( h = 4 \), то площадь \( S = 6 \cdot 4 = 24 \).
+        </p>
+      
+        <h3 class="article__subheader">
+          2. Прямоугольник
+        </h3>
+      
+        <p class="article__text">
+          <b>Прямоугольник</b> — это частный случай параллелограмма, у которого все углы прямые (\( 90^\circ \)). Это знакомая всем фигура, похожая на лист бумаги или экран смартфона.
+        </p>
+      
+        <p class="article__text">
+          <b>Особенности прямоугольника:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Все углы прямые.
+          </li>
+          <li class="article__text">
+            Противоположные стороны равны и параллельны.
+          </li>
+          <li class="article__text">
+            Диагонали прямоугольника равны между собой.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Площадь прямоугольника:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S = a \cdot b
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( a \) и \( b \) — длины соседних сторон.
+        </p>
+      
+        <p class="article__text">
+          Пример: если стороны \( a = 5 \) и \( b = 3 \), то площадь \( S = 5 \cdot 3 = 15 \).
+        </p>
+      
+        <h3 class="article__subheader">
+          3. Ромб
+        </h3>
+      
+        <p class="article__text">
+          <b>Ромб</b> — это параллелограмм, у которого все стороны равны. Представьте ромб как "наклонённый квадрат". У него есть несколько интересных свойств.
+        </p>
+      
+        <p class="article__text">
+          <b>Основные свойства:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Все стороны ромба равны.
+          </li>
+          <li class="article__text">
+            Диагонали ромба перпендикулярны (пересекаются под прямым углом).
+          </li>
+          <li class="article__text">
+            Диагонали делят углы ромба пополам и являются его осями симметрии.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Площадь ромба:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S = \frac{d_1 \cdot d_2}{2}
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( d_1 \) и \( d_2 \) — длины диагоналей.
+        </p>
+      
+        <p class="article__text">
+          Пример: если диагонали \( d_1 = 8 \) и \( d_2 = 6 \), то площадь \( S = \frac{8 \cdot 6}{2} = 24 \).
+        </p>
+      
+        <h3 class="article__subheader">
+          4. Квадрат
+        </h3>
+      
+        <p class="article__text">
+          <b>Квадрат</b> — это особый случай ромба и прямоугольника. У квадрата все стороны равны, а все углы прямые. Это идеальная фигура, которая часто встречается в жизни: плитка на полу, шахматная доска, окна.
+        </p>
+      
+        <p class="article__text">
+          <b>Свойства квадрата:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Все стороны равны.
+          </li>
+          <li class="article__text">
+            Все углы прямые.
+          </li>
+          <li class="article__text">
+            Диагонали квадрата равны и пересекаются под углом \( 90^\circ \).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Площадь квадрата:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S = a^2
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( a \) — длина стороны квадрата.
+        </p>
+      
+        <p class="article__text">
+          Пример: если сторона \( a = 4 \), то площадь \( S = 4^2 = 16 \).
+        </p>
+      
+        <h3 class="article__subheader">
+          5. Трапеция
+        </h3>
+      
+        <p class="article__text">
+          <b>Трапеция</b> — это четырёхугольник, у которого только одна пара противоположных сторон параллельна. Эти параллельные стороны называются <b>основаниями</b>, а непараллельные — <b>боковыми сторонами</b>.
+        </p>
+      
+        <p class="article__text">
+          <b>Основные свойства:</b>
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Основания трапеции параллельны.
+          </li>
+          <li class="article__text">
+            Боковые стороны могут быть равными (равнобокая трапеция) или разными.
+          </li>
+          <li class="article__text">
+            Если один из углов трапеции прямой, она называется <b>прямоугольной трапецией</b>.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          <b>Площадь трапеции:</b>
+        </p>
+      
+        <p class="article__formula">
+          \[
+          S = \frac{1}{2} \cdot (a + b) \cdot h
+          \]
+        </p>
+      
+        <p class="article__text">
+          где \( a \) и \( b \) — длины оснований, а \( h \) — высота (расстояние между основаниями).
+        </p>
+      
+        <p class="article__text">
+          Пример: если основания \( a = 7 \), \( b = 5 \), а высота \( h = 4 \), то площадь \( S = \frac{1}{2} \cdot (7 + 5) \cdot 4 = 24 \).
+        </p>
+      
+        <h3 class="article__subheader">
+          Параллельность и перпендикулярность
+        </h3>
+      
+        <p class="article__text">
+          - <b>Параллельные прямые</b> (\( \parallel \)) — это прямые, которые никогда не пересекаются, сколько бы их ни продолжали.
+          - <b>Перпендикулярные прямые</b> (\( \perp \)) — это прямые, которые пересекаются под углом \( 90^\circ \).
+        </p>
+      
+        <p class="article__text">
+          Эти понятия важны для понимания свойств четырёхугольников. Например, в прямоугольнике стороны перпендикулярны, а в параллелограмме — параллельны.
+        </p>
+      
+        <h3 class="article__subheader">
+          Заключение
+        </h3>
+      
+        <p class="article__text">
+          Мы рассмотрели основные виды четырёхугольников: параллелограмм, прямоугольник, ромб, квадрат и трапецию. Каждая из этих фигур имеет свои уникальные свойства и формулы для вычисления площади. Теперь вы знаете, как отличить ромб от квадрата, а трапецию — от параллелограмма. Геометрия становится проще, когда вы понимаете её основы!
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

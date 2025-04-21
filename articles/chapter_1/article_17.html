@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Свойства степеней и корней
+        </h2>
+      
+        <p class="article__text">
+          Степени и корни — это мощные инструменты в математике, которые позволяют упрощать выражения и решать задачи. Давайте разберём их свойства пошагово, чтобы всё стало предельно ясно.
+        </p>
+      
+        <h3 class="article__subheader">
+          Степени
+        </h3>
+      
+        <p class="article__text">
+          <b>Степень</b> — это способ кратко записать многократное умножение числа на само себя. Например:  
+          <p class="article__formula">
+            \[
+            a^n = \underbrace{a \cdot a \cdot \ldots \cdot a}_{n \text{ раз}},
+            \]
+          </p>
+          где:  
+          - \( a \) — основание степени,  
+          - \( n \) — показатель степени.
+        </p>
+      
+        <p class="article__text">
+          <b>Основные свойства степеней:</b>
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            <b>Произведение степеней с одинаковыми основаниями:</b>  
+            Если умножаются степени с одинаковым основанием, то показатели складываются:  
+            <p class="article__formula">
+              \[
+              a^m \cdot a^n = a^{m + n}.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              2^3 \cdot 2^4 = 2^{3 + 4} = 2^7.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Частное степеней с одинаковыми основаниями:</b>  
+            Если делятся степени с одинаковым основанием, то показатели вычитаются:  
+            <p class="article__formula">
+              \[
+              \frac{a^m}{a^n} = a^{m - n}, \quad a \ne 0.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              \frac{3^5}{3^2} = 3^{5 - 2} = 3^3.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Возведение степени в степень:</b>  
+            Если степень возводится ещё раз в степень, то показатели перемножаются:  
+            <p class="article__formula">
+              \[
+              (a^m)^n = a^{m \cdot n}.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              (2^3)^4 = 2^{3 \cdot 4} = 2^{12}.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Возведение произведения в степень:</b>  
+            Если произведение возводится в степень, то каждый множитель возводится в эту степень:  
+            <p class="article__formula">
+              \[
+              (ab)^n = a^n \cdot b^n.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              (2 \cdot 3)^2 = 2^2 \cdot 3^2 = 4 \cdot 9 = 36.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Возведение частного в степень:</b>  
+            Если частное возводится в степень, то числитель и знаменатель возводятся в эту степень:  
+            <p class="article__formula">
+              \[
+              \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}, \quad b \ne 0.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              \left(\frac{2}{3}\right)^3 = \frac{2^3}{3^3} = \frac{8}{27}.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Степень с нулевым показателем:</b>  
+            Любое число (кроме нуля) в нулевой степени равно 1:  
+            <p class="article__formula">
+              \[
+              a^0 = 1, \quad a \ne 0.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              5^0 = 1.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Степень с отрицательным показателем:</b>  
+            Отрицательная степень означает, что нужно взять обратное число:  
+            <p class="article__formula">
+              \[
+              a^{-n} = \frac{1}{a^n}, \quad a \ne 0.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              2^{-3} = \frac{1}{2^3} = \frac{1}{8}.
+              \]
+            </p>
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          Корни
+        </h3>
+      
+        <p class="article__text">
+          <b>Корень n-й степени</b> из числа \( a \) — это такое число \( x \), что \( x^n = a \). Обозначается как:  
+          <p class="article__formula">
+            \[
+            \sqrt[n]{a}.
+            \]
+          </p>
+        </p>
+      
+        <p class="article__text">
+          <b>Свойства корней:</b>
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            <b>Корень из произведения:</b>  
+            Корень из произведения равен произведению корней:  
+            <p class="article__formula">
+              \[
+              \sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b}.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              \sqrt[3]{8 \cdot 27} = \sqrt[3]{8} \cdot \sqrt[3]{27} = 2 \cdot 3 = 6.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Корень из частного:</b>  
+            Корень из частного равен частному корней:  
+            <p class="article__formula">
+              \[
+              \sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}, \quad b \ne 0.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              \sqrt[4]{\frac{16}{81}} = \frac{\sqrt[4]{16}}{\sqrt[4]{81}} = \frac{2}{3}.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Возведение корня в степень:</b>  
+            Корень можно возвести в степень, преобразовав его в степень с дробным показателем:  
+            <p class="article__formula">
+              \[
+              (\sqrt[n]{a})^m = a^{\frac{m}{n}}.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              (\sqrt[3]{2})^4 = 2^{\frac{4}{3}}.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Корень из степени:</b>  
+            Корень из степени можно записать как степень с дробным показателем:  
+            <p class="article__formula">
+              \[
+              \sqrt[n]{a^m} = a^{\frac{m}{n}}.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              \sqrt[3]{2^6} = 2^{\frac{6}{3}} = 2^2 = 4.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Корень из корня:</b>  
+            Корень из корня можно заменить одним корнем с произведением показателей:  
+            <p class="article__formula">
+              \[
+              \sqrt[m]{\sqrt[n]{a}} = \sqrt[mn]{a}.
+              \]
+            </p>
+            <b>Пример:</b>  
+            <p class="article__formula">
+              \[
+              \sqrt[2]{\sqrt[3]{8}} = \sqrt[6]{8} = 2.
+              \]
+            </p>
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          Связь между степенями и корнями
+        </h3>
+      
+        <p class="article__text">
+          Корень можно представить в виде степени с дробным показателем:  
+          <p class="article__formula">
+            \[
+            \sqrt[n]{a} = a^{\frac{1}{n}}.
+            \]
+          </p>
+          Таким образом, все свойства степеней применимы и к корням.
+        </p>
+      
+        <h3 class="article__subheader">
+          Область определения корней
+        </h3>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Чётная степень корня</b> (например, квадратный корень) определена только для неотрицательных чисел: \( a \ge 0 \).
+          </li>
+          <li class="article__text">
+            <b>Нечётная степень корня</b> (например, кубический корень) определена для всех действительных чисел.
+          </li>
+        </ul>
+      
+        <h3 class="article__subheader">
+          Интерактивная анимация
+        </h3>
+      
+        <p class="article__text">
+          [Предлагаю создать анимацию, где пользователь может вводить различные выражения со степенями и корнями. Анимация будет пошагово показывать применение свойств: раскрытие скобок, преобразование степеней, упрощение выражений. Пользователь сможет выбирать действия и наблюдать результат на каждом этапе.]
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Как перевести десятичную дробь в обыкновенную
+        </h2>
+      
+        <p class="article__text">
+          Перевод десятичной дроби в обыкновенную — это как расшифровка числа, чтобы увидеть его "внутреннюю суть". Сделаем это шаг за шагом, чтобы всё стало предельно ясно.
+        </p>
+      
+        <h3 class="article__subheader">
+          Алгоритм перевода
+        </h3>
+      
+        <p class="article__text">
+          Чтобы перевести десятичную дробь в обыкновенную, следуйте этим простым шагам:
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            <b>Записать дробь как число с единицей в знаменателе</b>:  
+            Пример: \( 0{,}75 = \frac{0{,}75}{1} \).
+          </li>
+          <li class="article__text">
+            <b>Умножить числитель и знаменатель на \( 10^n \), где \( n \) — количество знаков после запятой</b>:  
+            Для \( 0{,}75 \) два знака после запятой, значит умножаем на \( 10^2 = 100 \):  
+            <p class="article__formula">
+              \[
+              \frac{0{,}75}{1} \times \frac{100}{100} = \frac{75}{100}.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Сократить дробь, если возможно</b>:  
+            <p class="article__formula">
+              \[
+              \frac{75}{100} = \frac{3}{4}.
+              \]
+            </p>
+          </li>
+        </ol>
+      
+        <p class="article__text">
+          Теперь у нас получилась обыкновенная дробь \( \frac{3}{4} \), которая равна исходной десятичной \( 0{,}75 \).
+        </p>
+      
+        <h3 class="article__subheader">
+          Примеры
+        </h3>
+      
+        <p class="article__text">
+          Давайте разберём несколько примеров, чтобы закрепить алгоритм.
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            \( 0{,}5 \):
+            <ul class="article__list">
+              <li class="article__text">
+                Записываем как \( \frac{0{,}5}{1} \).
+              </li>
+              <li class="article__text">
+                Умножаем числитель и знаменатель на \( 10^1 = 10 \):  
+                <p class="article__formula">
+                  \[
+                  \frac{0{,}5}{1} \times \frac{10}{10} = \frac{5}{10}.
+                  \]
+                </p>
+              </li>
+              <li class="article__text">
+                Сокращаем:  
+                <p class="article__formula">
+                  \[
+                  \frac{5}{10} = \frac{1}{2}.
+                  \]
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="article__text">
+            \( 0{,}25 \):
+            <ul class="article__list">
+              <li class="article__text">
+                Записываем как \( \frac{0{,}25}{1} \).
+              </li>
+              <li class="article__text">
+                Умножаем числитель и знаменатель на \( 10^2 = 100 \):  
+                <p class="article__formula">
+                  \[
+                  \frac{0{,}25}{1} \times \frac{100}{100} = \frac{25}{100}.
+                  \]
+                </p>
+              </li>
+              <li class="article__text">
+                Сокращаем:  
+                <p class="article__formula">
+                  \[
+                  \frac{25}{100} = \frac{1}{4}.
+                  \]
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="article__text">
+            \( 0{,}125 \):
+            <ul class="article__list">
+              <li class="article__text">
+                Записываем как \( \frac{0{,}125}{1} \).
+              </li>
+              <li class="article__text">
+                Умножаем числитель и знаменатель на \( 10^3 = 1000 \):  
+                <p class="article__formula">
+                  \[
+                  \frac{0{,}125}{1} \times \frac{1000}{1000} = \frac{125}{1000}.
+                  \]
+                </p>
+              </li>
+              <li class="article__text">
+                Сокращаем:  
+                <p class="article__formula">
+                  \[
+                  \frac{125}{1000} = \frac{1}{8}.
+                  \]
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      
+        <h3 class="article__subheader">
+          Важные замечания
+        </h3>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Целая часть</b>: Если десятичная дробь содержит целую часть, её можно записать в виде смешанного числа. Например:  
+            <p class="article__formula">
+              \[
+              3{,}75 = 3 + 0{,}75 = 3 + \frac{75}{100} = 3 + \frac{3}{4} = \frac{15}{4}.
+              \]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Периодические дроби</b>: Для периодических десятичных дробей (например, \( 0{,}(3) \)) существует отдельный алгоритм перевода. Мы можем рассмотреть его позже, если хотите!
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

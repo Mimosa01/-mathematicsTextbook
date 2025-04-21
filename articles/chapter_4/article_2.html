@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          🔄 Как работают тригонометрические функции на единичной окружности?
+        </h2>
+      
+        <p class="article__text">
+          Мы уже знаем, как определить синус, косинус, тангенс и котангенс для острых углов. Теперь давайте разберёмся, как это работает для <b>любых углов</b> — даже тех, которые больше 360° или отрицательны! Для этого мы будем использовать <b>единичную окружность</b>. Это простой, но мощный инструмент, который поможет нам понять тригонометрию "на пальцах".
+        </p>
+      
+        <h3 class="article__subheader">
+          🔹 Что такое единичная окружность?
+        </h3>
+      
+        <p class="article__text">
+          Представьте окружность с радиусом 1, расположенную в центре координатной плоскости (то есть её центр находится в точке \( O(0, 0) \)).
+        </p>
+      
+        <p class="article__text">
+          Теперь возьмём произвольный угол \( \theta \), который образуется между положительным направлением оси \( x \) и радиус-вектором (линией, соединяющей центр окружности с какой-то точкой на ней). Угол \( \theta \) отсчитывается <b>против часовой стрелки</b>, если он положительный, и по часовой стрелке, если отрицательный.
+        </p>
+      
+        <h3 class="article__subheader">
+          Тригонометрические функции через единичную окружность
+        </h3>
+      
+        <p class="article__text">
+          На единичной окружности всё становится наглядно! Вот как определяются основные тригонометрические функции:
+        </p>
+      
+        <ol class="article__list">
+          <li class="article__text">
+            <b>Синус угла \( \theta \)</b>:  
+            Это просто <b>y-координата</b> точки на окружности. Формула:
+            <p class="article__formula">
+              \[\sin \theta = y\]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Косинус угла \( \theta \)</b>:  
+            Это <b>x-координата</b> той же точки. Формула:
+            <p class="article__formula">
+              \[\cos \theta = x\]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Тангенс угла \( \theta \)</b>:  
+            Это отношение синуса к косинусу, то есть:
+            <p class="article__formula">
+              \[\tan \theta = \frac{\sin \theta}{\cos \theta} = \frac{y}{x}\]
+            </p>
+            Важно помнить: тангенс не существует, если \( \cos \theta = 0 \) (то есть когда \( x = 0 \)).
+          </li>
+          <li class="article__text">
+            <b>Котангенс угла \( \theta \)</b>:  
+            Это отношение косинуса к синусу:
+            <p class="article__formula">
+              \[\cot \theta = \frac{\cos \theta}{\sin \theta} = \frac{x}{y}\]
+            </p>
+            Котангенс не существует, если \( \sin \theta = 0 \) (то есть когда \( y = 0 \)).
+          </li>
+        </ol>
+      
+        <h3 class="article__subheader">
+          Примеры углов и их значений
+        </h3>
+      
+        <p class="article__text">
+          Давайте рассмотрим несколько важных углов и найдём их тригонометрические значения:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Угол \( 0^\circ \) или \( 0 \) радиан</b>:  
+            Точка на окружности: \( (1, 0) \).  
+            Значения функций:
+            <p class="article__formula">
+              \[\sin 0 = 0, \quad \cos 0 = 1, \quad \tan 0 = 0, \quad \cot 0 \text{ не существует}.\]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Угол \( 90^\circ \) или \( \frac{\pi}{2} \) радиан</b>:  
+            Точка на окружности: \( (0, 1) \).  
+            Значения функций:
+            <p class="article__formula">
+              \[\sin \frac{\pi}{2} = 1, \quad \cos \frac{\pi}{2} = 0, \quad \tan \frac{\pi}{2} \text{ не существует}, \quad \cot \frac{\pi}{2} = 0.\]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Угол \( 180^\circ \) или \( \pi \) радиан</b>:  
+            Точка на окружности: \( (-1, 0) \).  
+            Значения функций:
+            <p class="article__formula">
+              \[\sin \pi = 0, \quad \cos \pi = -1, \quad \tan \pi = 0, \quad \cot \pi \text{ не существует}.\]
+            </p>
+          </li>
+          <li class="article__text">
+            <b>Угол \( 270^\circ \) или \( \frac{3\pi}{2} \) радиан</b>:  
+            Точка на окружности: \( (0, -1) \).  
+            Значения функций:
+            <p class="article__formula">
+              \[\sin \frac{3\pi}{2} = -1, \quad \cos \frac{3\pi}{2} = 0, \quad \tan \frac{3\pi}{2} \text{ не существует}, \quad \cot \frac{3\pi}{2} = 0.\]
+            </p>
+          </li>
+        </ul>
+      
+        <h3 class="article__subheader">
+          Эквивалентные углы и лишние обороты
+        </h3>
+      
+        <p class="article__text">
+          В тригонометрии углы могут "накручиваться" снова и снова, и это совершенно нормально! Например, угол \( 450^\circ \) можно привести к \( 90^\circ \), вычтя один полный оборот (\( 360^\circ \)). Аналогично, угол \( \frac{5\pi}{4} \) радиан можно привести к \( \frac{\pi}{2} \).
+        </p>
+      
+        <p class="article__formula">
+          \[\theta' = \theta \pm 2\pi n \quad (n \in \mathbb{Z}),\]
+        </p>
+      
+        <p class="article__text">
+          где \( \theta' \) — новый угол, а \( n \) — количество оборотов (положительное или отрицательное).
+        </p>
+      
+        <h3 class="article__subheader">
+          Периодичность тригонометрических функций
+        </h3>
+      
+        <p class="article__text">
+          Тригонометрические функции обладают замечательным свойством — они <b>периодичны</b>. Это значит, что их значения повторяются через определённые интервалы:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Синус и косинус</b> повторяются каждые \( 2\pi \) радиан (или 360°).  
+            <b>Период</b>: \( 2\pi \).
+          </li>
+          <li class="article__text">
+            <b>Тангенс и котангенс</b> повторяются чаще — каждые \( \pi \) радиан (или 180°).  
+            <b>Период</b>: \( \pi \).
+          </li>
+        </ul>
+      
+        <h3 class="article__subheader">
+          Углы с лишними оборотами
+        </h3>
+      
+        <p class="article__text">
+          Иногда углы бывают слишком большими, как, например, \( 720^\circ \) или \( 4\pi \) радиан. Но не стоит пугаться! Мы всегда можем "убрать" лишние обороты, вычитая \( 360^\circ \) (или \( 2\pi \) радиан) столько раз, сколько нужно.
+        </p>
+      
+        <p class="article__text">
+          Например:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            Угол \( 720^\circ \) можно привести к \( 0^\circ \).
+          </li>
+          <li class="article__text">
+            Угол \( 4\pi \) радиан также равен \( 0 \) радиан.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Значения тригонометрических функций для таких углов будут <b>такими же</b>, как и для их "упрощённых" эквивалентов.
+        </p>
+      
+        <h3 class="article__subheader">
+          Итог
+        </h3>
+      
+        <p class="article__text">
+          Мы разобрались, как с помощью единичной окружности находить значения тригонометрических функций для любых углов. Также узнали, что углы можно "сворачивать", используя периодичность функций. Теперь вы готовы работать с углами любой величины — будь то 360°, \( 720^\circ \), или даже \( -900^\circ \)! 😊
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

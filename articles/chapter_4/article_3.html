@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Тригонометрические функции: графики и их секреты
+        </h2>
+      
+        <p class="article__text">
+          Тригонометрические функции — это настоящие "звезды" математики. Они помогают описывать периодические процессы, такие как колебания маятника, звуковые волны или даже биение сердца. Давайте разберёмся, как они работают, и посмотрим на их графики!
+        </p>
+      
+        <h3 class="article__subheader">
+          Что такое тригонометрические функции?
+        </h3>
+      
+        <p class="article__text">
+          Тригонометрические функции, такие как синус, косинус, тангенс и котангенс, определяются для любых углов. Углы обычно измеряются в радианах (но можно перевести их в градусы по формуле):
+        </p>
+      
+        <p class="article__formula">
+          \[\theta_{\text{град}} = \theta_{\text{рад}} \cdot \frac{180}{\pi}\]
+        </p>
+      
+        <p class="article__text">
+          Эти функции ставят каждому углу \( x \) в соответствие его синус, косинус, тангенс или котангенс (если они существуют). Теперь давайте посмотрим, как выглядят их графики и что они означают.
+        </p>
+      
+        <h3 class="article__subheader">
+          1. Синус и косинус: волны, которые повторяются
+        </h3>
+      
+        <h4 class="article__subsubheader">
+          График синуса (\( y = \sin(x) \))
+        </h4>
+      
+        <p class="article__text">
+          График синуса называется <b>синусоидой</b>. Это плавная волна, которая повторяется через каждые \( 2\pi \) радиан. Такое свойство называется <b>периодичностью</b>, и у синуса период равен \( 2\pi \):
+        </p>
+      
+        <p class="article__formula">
+          \[\sin(x + 2\pi) = \sin(x)\]
+        </p>
+      
+        <p class="article__text">
+          Синус — это <b>нечётная функция</b>, то есть её график симметричен относительно начала координат:
+        </p>
+      
+        <p class="article__formula">
+          \[\sin(-x) = -\sin(x)\]
+        </p>
+      
+        <h4 class="article__subsubheader">
+          График косинуса (\( y = \cos(x) \))
+        </h4>
+      
+        <p class="article__text">
+          График косинуса называется <b>косинусоидой</b>. Он тоже периодичен с тем же периодом \( 2\pi \), но сдвинут относительно синуса на \( \frac{\pi}{2} \) влево или вправо. Косинус — это <b>чётная функция</b>, то есть её график симметричен относительно оси \( y \):
+        </p>
+      
+        <p class="article__formula">
+          \[\cos(-x) = \cos(x)\]
+        </p>
+      
+        <h3 class="article__subheader">
+          2. Тангенс и котангенс: функции с "разрывами"
+        </h3>
+      
+        <h4 class="article__subsubheader">
+          График тангенса (\( y = \tan(x) \))
+        </h4>
+      
+        <p class="article__text">
+          График тангенса немного сложнее. Он имеет <b>вертикальные асимптоты</b> в точках, где функция не определена. Эти точки возникают, когда \( x = \frac{\pi}{2} + n\pi \) (где \( n \) — целое число), потому что знаменатель \( \cos(x) \) обращается в ноль.
+        </p>
+      
+        <p class="article__formula">
+          \[\tan(x) = \frac{\sin(x)}{\cos(x)}\]
+        </p>
+      
+        <p class="article__text">
+          Период тангенса равен \( \pi \), то есть график повторяется через каждые \( \pi \) радиан. Тангенс — это <b>нечётная функция</b>:
+        </p>
+      
+        <p class="article__formula">
+          \[\tan(-x) = -\tan(x)\]
+        </p>
+      
+        <h4 class="article__subsubheader">
+          График котангенса (\( y = \cot(x) \))
+        </h4>
+      
+        <p class="article__text">
+          Котангенс похож на тангенс, но его асимптоты находятся в других точках — там, где \( x = n\pi \) (где \( n \) — целое число). Формула для котангенса:
+        </p>
+      
+        <p class="article__formula">
+          \[\cot(x) = \frac{\cos(x)}{\sin(x)}\]
+        </p>
+      
+        <p class="article__text">
+          Как и тангенс, котангенс имеет период \( \pi \) и является <b>нечётной функцией</b>:
+        </p>
+      
+        <p class="article__formula">
+          \[\cot(-x) = -\cot(x)\]
+        </p>
+      
+        <h3 class="article__subheader">
+          3. Ограниченность синуса и косинуса
+        </h3>
+      
+        <p class="article__text">
+          Синус и косинус обладают важным свойством: их значения всегда лежат между \(-1\) и \(1\):
+        </p>
+      
+        <p class="article__formula">
+          \[-1 \leq \sin(x) \leq 1\]
+        </p>
+        <p class="article__formula">
+          \[-1 \leq \cos(x) \leq 1\]
+        </p>
+      
+        <p class="article__text">
+          Тангенс и котангенс, напротив, могут принимать <b>любые действительные значения</b>, так как их графики стремятся к бесконечности около асимптот.
+        </p>
+      
+        <h3 class="article__subheader">
+          4. Как правильно строить графики?
+        </h3>
+      
+        <p class="article__text">
+          При ручном построении графиков важно быть аккуратным. Например, не стоит округлять \( \pi \) до простых чисел, таких как 3 или 3.1, так как это приведёт к ошибкам. Лучше использовать более точное значение \( \pi \approx 3.14159 \) и добавлять дополнительные опорные точки.
+        </p>
+      
+        <h3 class="article__subheader">
+          Итог
+        </h3>
+      
+        <p class="article__text">
+          Мы разобрались с графиками основных тригонометрических функций: синуса, косинуса, тангенса и котангенса. Теперь вы знаете, что синус и косинус — это плавные волны с периодом \( 2\pi \), а тангенс и котангенс — функции с "разрывами". Эти графики помогут вам лучше понять, как работают тригонометрические функции и как их применять в задачах.
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

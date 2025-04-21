@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Периодичность и взаимосвязь тригонометрических функций: формулы приведения
+        </h2>
+      
+        <p class="article__text">
+          Тригонометрические функции — это настоящие "волшебники" математики. Они обладают удивительными свойствами, которые помогают упрощать сложные выражения и решать задачи. Одно из таких свойств — <b>периодичность</b>. Давайте разберёмся, как это работает, и познакомимся с формулами приведения!
+        </p>
+      
+        <h3 class="article__subheader">
+          Что такое периодичность?
+        </h3>
+      
+        <p class="article__text">
+          Периодичность означает, что значения тригонометрических функций повторяются через определённые интервалы. Например, если мы добавим или вычтем \( 2\pi \) (один полный оборот) к углу \( \alpha \), значения синуса и косинуса не изменятся:
+        </p>
+      
+        <p class="article__formula">
+          \[\sin(\alpha + 2\pi) = \sin(\alpha)\]
+        </p>
+        <p class="article__formula">
+          \[\cos(\alpha + 2\pi) = \cos(\alpha)\]
+        </p>
+      
+        <p class="article__text">
+          Это свойство позволяет нам "накручивать" углы до бесконечности, зная, что функция будет повторяться через каждые \( 2\pi \).
+        </p>
+      
+        <h3 class="article__subheader">
+          Взаимосвязь синуса и косинуса
+        </h3>
+      
+        <p class="article__text">
+          Синус и косинус тесно связаны друг с другом. Если "сдвинуть" аргумент синуса на \( \frac{\pi}{2} \), получится косинус:
+        </p>
+      
+        <p class="article__formula">
+          \[\sin\left( \alpha + \frac{\pi}{2} \right) = \cos(\alpha)\]
+        </p>
+      
+        <p class="article__text">
+          И наоборот, если "сдвинуть" аргумент косинуса на \( \frac{\pi}{2} \), получится минус синус:
+        </p>
+      
+        <p class="article__formula">
+          \[\cos\left( \alpha + \frac{\pi}{2} \right) = -\sin(\alpha)\]
+        </p>
+      
+        <p class="article__text">
+          Эта связь помогает легко переходить от одной функции к другой.
+        </p>
+      
+        <p class="article__text">
+          Почему мы используем букву \( \alpha \)? Потому что \( \alpha \) может быть не только простым углом, но и сложной зависимостью, например, \( \alpha = f(x) \). Это делает формулы универсальными и применимыми в разных задачах.
+        </p>
+      
+        <h3 class="article__subheader">
+          Взаимосвязь тангенса и котангенса
+        </h3>
+      
+        <p class="article__text">
+          Тангенс и котангенс тоже периодичны, но их период равен \( \pi \) (вдвое меньше, чем у синуса и косинуса):
+        </p>
+      
+        <p class="article__formula">
+          \[\tan(\alpha + \pi) = \tan(\alpha)\]
+        </p>
+        <p class="article__formula">
+          \[\cot(\alpha + \pi) = \cot(\alpha)\]
+        </p>
+      
+        <p class="article__text">
+          Кроме того, тангенс и котангенс могут преобразовываться друг в друга. Например:
+        </p>
+      
+        <p class="article__formula">
+          \[\tan\left( \alpha + \frac{\pi}{2} \right) = -\cot(\alpha)\]
+        </p>
+      
+        <h3 class="article__subheader">
+          Формулы приведения: ключ к упрощению
+        </h3>
+      
+        <p class="article__text">
+          Формулы приведения — это мощный инструмент для работы с тригонометрическими функциями. Они позволяют упростить выражения, если к углу прибавлены или вычтены значения, кратные \( \pi \) или \( \frac{\pi}{2} \).
+        </p>
+      
+        <p class="article__text">
+          Примеры формул приведения:
+        </p>
+      
+        <p class="article__text">
+          Для синуса и косинуса:
+        </p>
+      
+        <p class="article__formula">
+          \[\sin(\alpha + \pi) = -\sin(\alpha)\]
+        </p>
+        <p class="article__formula">
+          \[\cos(\alpha + \pi) = -\cos(\alpha)\]
+        </p>
+      
+        <p class="article__text">
+          Для тангенса и котангенса:
+        </p>
+      
+        <p class="article__formula">
+          \[\tan(\alpha + \pi) = \tan(\alpha)\]
+        </p>
+        <p class="article__formula">
+          \[\cot(\alpha + \pi) = \cot(\alpha)\]
+        </p>
+      
+        <p class="article__text">
+          Эти формулы помогают "убрать" лишние добавки в углах и сделать выражения проще.
+        </p>
+      
+        <h3 class="article__subheader">
+          Применение формул приведения
+        </h3>
+      
+        <p class="article__text">
+          Иногда формулы приведения используются не для упрощения, а для того, чтобы записать выражение в более удобном виде. Например, \( \sin(\alpha) \) можно записать как \( \sin\left( \alpha + \frac{\pi}{2} \right) \), чтобы подготовить его для дальнейших преобразований.
+        </p>
+      
+        <h3 class="article__subheader">
+          Большие периоды: всё то же самое!
+        </h3>
+      
+        <p class="article__text">
+          Эти принципы работают не только для одного периода, но и для больших интервалов. Например:
+        </p>
+      
+        <p class="article__formula">
+          \[\sin(\alpha + 2\pi) = \sin(\alpha)\]
+        </p>
+        <p class="article__formula">
+          \[\cos(\alpha + 2\pi) = \cos(\alpha)\]
+        </p>
+      
+        <p class="article__text">
+          Аналогично для тангенса и котангенса:
+        </p>
+      
+        <p class="article__formula">
+          \[\tan(\alpha + \pi) = \tan(\alpha)\]
+        </p>
+        <p class="article__formula">
+          \[\cot(\alpha + \pi) = \cot(\alpha)\]
+        </p>
+      
+        <h3 class="article__subheader">
+          Заключение
+        </h3>
+      
+        <p class="article__text">
+          Формулы приведения — это ваш надёжный помощник в мире тригонометрии. Они помогают упрощать выражения, анализировать функции и решать задачи. Понимание этих формул сделает работу с тригонометрическими функциями проще и интереснее!
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

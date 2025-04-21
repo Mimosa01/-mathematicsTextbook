@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Числа: кратко о главном</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="../scripts/calculator_log_regres.js"></script>
+  <script defer src="../scripts/gradient_descent.js"></script>
+  <script defer src="../scripts/visual_binary_class.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+      <a href="../index.html" class="btn btn-red">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M282.87-191.87v-91h286.15q60.13 0 104.12-38.92 43.99-38.93 43.99-96.78 0-57.84-43.99-96.89-43.99-39.04-104.12-39.04H324.91l98.98 98.98-63.65 63.65L151.87-600l208.37-208.13 63.65 63.65-98.98 98.98h244.11q98.44 0 168.77 65.27 70.34 65.27 70.34 161.43 0 96.15-70.34 161.54-70.33 65.39-168.77 65.39H282.87Z"/></svg>
+        <span>На главную</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="article__header">
+          Геометрия: элементарные фигуры и инструменты
+        </h2>
+      
+        <p class="article__text">
+          Геометрия — это не просто школьный предмет, который иногда кажется сложным. На самом деле это увлекательный мир, где всё построено на логике, точности и красоте форм. В этом разделе мы разберём основные геометрические фигуры, их свойства и инструменты, которые помогут вам работать с ними.
+        </p>
+      
+        <h3 class="article__subheader">
+          Орудия труда: что нужно для геометрии?
+        </h3>
+      
+        <p class="article__text">
+          Чтобы решать геометрические задачи, важно быть вооружённым нужными инструментами. Вот список того, что вам понадобится:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Ручка</b> (гелевая предпочтительнее — она пишет чётче и удобнее для записей);
+          </li>
+          <li class="article__text">
+            <b>Простой карандаш</b> (лучше взять несколько разных по жирности, чтобы делать аккуратные чертежи);
+          </li>
+          <li class="article__text">
+            <b>Линейка</b> (для ровных линий и измерений);
+          </li>
+          <li class="article__text">
+            <b>Тетрадь в клетку</b> (клетка помогает строить фигуры более точно);
+          </li>
+          <li class="article__text">
+            <b>Циркуль</b> (незаменим для окружностей и дуг);
+          </li>
+          <li class="article__text">
+            <b>Транспортир</b> (чтобы измерять и строить углы).
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          Дополнительно можно подготовить <b>ластик</b> (но лучше стараться сразу делать аккуратные чертежи) или использовать специальные корректоры для исправлений.
+        </p>
+      
+        <p class="article__text">
+          Итак, с инструментами разобрались. Теперь переходим к самым важным героям геометрии — её <b>основным фигурам</b>.
+        </p>
+      
+        <h3 class="article__subheader">
+          Основные геометрические фигуры
+        </h3>
+      
+        <p class="article__text">
+          1. <b>Точка</b>
+        </p>
+      
+        <p class="article__text">
+          Точка — это "кирпичик", из которого строится вся геометрия. Она не имеет размеров: ни длины, ни ширины, ни площади. На чертежах точка обычно обозначается маленьким кружочком или крестиком. Например, точка \( A \) или \( B \).
+        </p>
+      
+        <p class="article__text">
+          Точки помогают нам определять положения в пространстве. Без них невозможно было бы описать прямые, отрезки и другие фигуры.
+        </p>
+      
+        <p class="article__text">
+          2. <b>Прямая</b>
+        </p>
+      
+        <p class="article__text">
+          Прямая — это бесконечная линия, которая не имеет ни начала, ни конца. Она продолжается в обе стороны до бесконечности.
+        </p>
+      
+        <p class="article__text">
+          Прямую можно обозначить одной маленькой буквой (например, \( a \)) или двумя точками, через которые она проходит (например, \( AB \)).
+        </p>
+      
+        <p class="article__text">
+          Представьте себе дорогу, которая никогда не заканчивается — это и есть прямая!
+        </p>
+      
+        <p class="article__text">
+          3. <b>Луч</b>
+        </p>
+      
+        <p class="article__text">
+          Луч — это часть прямой, которая начинается в определённой точке и продолжается в одном направлении до бесконечности.
+        </p>
+      
+        <p class="article__text">
+          Луч обозначается как \( \overrightarrow{AB} \), где \( A \) — начало луча, а \( B \) — точка, через которую он проходит.
+        </p>
+      
+        <p class="article__text">
+          Если прямая — это бесконечная дорога, то луч — это фонарь, который светит только в одну сторону.
+        </p>
+      
+        <p class="article__text">
+          4. <b>Отрезок</b>
+        </p>
+      
+        <p class="article__text">
+          Отрезок — это часть прямой, ограниченная двумя точками. Эти точки называются <b>концами отрезка</b>.
+        </p>
+      
+        <p class="article__text">
+          Обозначается отрезок как \( AB \), где \( A \) и \( B \) — его концы.
+        </p>
+      
+        <p class="article__text">
+          Отрезок можно представить как кусок верёвки между двумя точками.
+        </p>
+      
+        <p class="article__text">
+          5. <b>Угол</b>
+        </p>
+      
+        <p class="article__text">
+          Угол — это фигура, образованная двумя лучами, исходящими из одной точки. Эта точка называется <b>вершиной угла</b>, а лучи — <b>сторонами угла</b>.
+        </p>
+      
+        <p class="article__text">
+          Угол можно обозначить как \( \angle ABC \), где \( B \) — вершина, или греческой буквой, например, \( \alpha \), \( \beta \), \( \gamma \).
+        </p>
+      
+        <p class="article__text">
+          Углы встречаются повсюду: в углах комнаты, в часах, в треугольниках и многоугольниках.
+        </p>
+      
+        <h3 class="article__subheader">
+          Виды углов
+        </h3>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Острый угол</b>: меньше \( 90^\circ \). Это "маленький" угол, как угол между стрелками часов в 10:10.
+          </li>
+          <li class="article__text">
+            <b>Прямой угол</b>: равен \( 90^\circ \). Такой угол часто помечают квадратиком на чертежах. Например, углы в прямоугольнике — прямые.
+          </li>
+          <li class="article__text">
+            <b>Тупой угол</b>: больше \( 90^\circ \), но меньше \( 180^\circ \). Это "широкий" угол, как угол между стрелками часов в 4:00.
+          </li>
+          <li class="article__text">
+            <b>Развёрнутый угол</b>: равен \( 180^\circ \). Это половина полного оборота, как прямая линия.
+          </li>
+          <li class="article__text">
+            <b>Полный угол</b>: равен \( 360^\circ \). Это полный оборот вокруг точки, как круг.
+          </li>
+        </ul>
+      
+        <p class="article__text">
+          На чертежах углы часто обозначаются дугами. Для прямых углов используют специальный значок — квадратик.
+        </p>
+      
+        <h3 class="article__subheader">
+          Измерение углов
+        </h3>
+      
+        <p class="article__text">
+          Углы можно измерять в двух единицах:
+        </p>
+      
+        <ul class="article__list">
+          <li class="article__text">
+            <b>Градусы</b>: это привычная нам система. Полный круг равен \( 360^\circ \).
+          </li>
+          <li class="article__text">
+            <b>Радианы</b>: это более "математическая" система, где угол измеряется через радиус окружности. Подробнее о радианах мы поговорим позже.
+          </li>
+        </ul>
+      
+        <h3 class="article__subheader">
+          Заключение
+        </h3>
+      
+        <p class="article__text">
+          Эти базовые понятия — точка, прямая, луч, отрезок и угол — лежат в основе всей геометрии. С их помощью можно описать и построить любую фигуру, решить задачу или доказать теорему. Теперь, когда вы знаете основы, можно смело двигаться дальше — к более сложным и интересным темам!
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="content">
+      <div class="container">
+        <h3 class="section-header">
+          Содержание
+        </h3>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Школьная математика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Линейная алгебра
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="accordion__item">
+            <h4 class="accordion__header">
+              <button class="btn-reset accordion__btn">
+                Математическая статистика
+              </button>
+            </h4>
+            <ol class="list-reset accordion__content">
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+              <li class="accordion__content__item">
+                <a href="#" class="accordion__link">Ссылка</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="header__logo">
+        <span>Math</span>
+        <span>AI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="link">Содержание</a>
+        <a href="#" class="link">Задачи</a>
+        <a href="#" class="link">О проекте</a>
+      </nav>
+
+    </div>
+    <div class="footer__copywrite">
+      <span>Mimosa</span>
+    </div>
+  </footer>
+  
+</body>
+</html>
