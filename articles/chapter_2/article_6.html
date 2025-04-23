@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Числа: кратко о главном</title>
+  <title>Метод интервалов</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -38,13 +38,13 @@
           Метод интервалов — это мощный инструмент для решения неравенств, особенно когда выражение содержит многочлены или дроби. Давайте разберём его пошагово на примерах.
         </p>
       
-        <h2 class="article__subheader">
-          Шаги решения методом интервалов
-        </h2>
-      
         <h3 class="article__subheader">
-          1. Приведение неравенства к виду \( f(x) > 0 \) или \( f(x) < 0 \)
+          Шаги решения методом интервалов
         </h3>
+      
+        <h4 class="article__h4">
+          1. Приведение неравенства к виду \( f(x) > 0 \) или \( f(x) < 0 \)
+        </h4>
       
         <p class="article__text">
           Если неравенство имеет вид \( f(x) \geq 0 \) или \( f(x) \leq 0 \), его можно преобразовать в строгую форму (\( > \) или \( < \)) и учесть граничные точки отдельно.
@@ -60,9 +60,9 @@
           Здесь неравенство уже приведено к нужному виду.
         </p>
       
-        <h3 class="article__subheader">
+        <h4 class="article__h4">
           2. Нахождение корней и определение недопустимых значений
-        </h3>
+        </h4>
       
         <p class="article__text">
           Решаем уравнение \( f(x) = 0 \) и находим его корни. Также определяем значения \( x \), при которых выражение \( f(x) \) не определено (например, если есть деление на ноль). Эти значения отмечаем на числовой прямой.
@@ -87,9 +87,9 @@
           Выражение \( x^2 - 5x + 6 \) определено для всех \( x \), поэтому недопустимых значений нет.
         </p>
       
-        <h3 class="article__subheader">
+        <h4 class="article__h4">
           3. Разбиение числовой прямой на интервалы
-        </h3>
+        </h4>
       
         <p class="article__text">
           Числовая прямая делится на интервалы, ограниченные найденными корнями и недопустимыми значениями.
@@ -105,9 +105,9 @@
           </p>
         </p>
       
-        <h3 class="article__subheader">
+        <h4 class="article__h4">
           4. Определение знака выражения на каждом интервале
-        </h3>
+        </h4>
       
         <p class="article__text">
           Выбираем произвольное значение \( x \) из каждого интервала и подставляем его в выражение \( f(x) \). Определяем знак полученного значения.
@@ -139,9 +139,9 @@
           - На интервале \( (3, +\infty) \): \( f(x) > 0 \).
         </p>
       
-        <h3 class="article__subheader">
+        <h4 class="article__h4">
           5. Запись решения
-        </h3>
+        </h4>
       
         <p class="article__text">
           В зависимости от знака выражения на интервалах, записываем решение неравенства. Для нестрогих неравенств включаем в ответ границы интервалов.
@@ -159,93 +159,22 @@
             \]
           </p>
         </p>
-      
-        <h2 class="article__subheader">
-          Интерактивная анимация
-        </h2>
-      
-        <p class="article__text">
-          [Интерактивная анимация: "Решение неравенства \( x^2 - 5x + 6 > 0 \) методом интервалов"]  
-          [Описание анимации: Пользователь вводит неравенство \( x^2 - 5x + 6 > 0 \), анимация показывает процесс нахождения корней, деления числовой прямой на интервалы, определения знака выражения на каждом интервале и записи решения.]
-        </p>
-      </div>
-    </section>
 
-    <!-- <section class="content">
-      <div class="container">
-        <h3 class="section-header">
-          Содержание
-        </h3>
-
-        <div class="accordion">
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Школьная математика
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Линейная алгебра
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Математическая статистика
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
+        <div class="article__footer">
+          <!-- <a href="#" class="article__footer__link link">Задачи для решения</a> -->
+          <div class="article__footer__wrapper">
+            <a href="./article_5.html" class="article__footer__btn">
+              <span class="article__footer__btn__span">Предыдущая статья</span>
+              <span class="article__footer__btn__topic">Действия с неравенствами</span>
+            </a>
+            <a href="./article_7.html" class="article__footer__btn">
+              <span class="article__footer__btn__span">Следующая статья</span>
+              <span class="article__footer__btn__topic">Уравнения и неравенства с модулем</span>
+            </a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
 
   <footer class="footer">

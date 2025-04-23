@@ -78,6 +78,10 @@
     display: block;
   }
 
+  .article__controls .btn {
+    width: calc((100% - 15px) / 2);
+  }
+
   .article__footer__wrapper {
     flex-direction: column;
   }

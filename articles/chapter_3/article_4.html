@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Числа: кратко о главном</title>
+  <title>Степенная функция: что это и как с ней работать</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/normalize.css">
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/media.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/media.css">
   <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script defer src="../scripts/calculator_log_regres.js"></script>
-  <script defer src="../scripts/gradient_descent.js"></script>
-  <script defer src="../scripts/visual_binary_class.js"></script>
 </head>
 <body>
 
@@ -87,22 +85,17 @@
           </li>
         </ul>
       
-        <p class="article__text">
-          [Анимация 1: Интерактивный график степенной функции]  
-          Предлагаю создать график, где пользователь может с помощью ползунка менять значение \( n \) (например, от -2 до 3 с шагом 0.1). На графике будет отображаться, как меняется кривая функции \( y = x^n \) при изменении \( n \). Пользователь сможет выбрать конкретные значения \( x \) (например, -2, -1, 0, 1, 2) и увидеть, как меняется \( y \). Также можно добавить кнопку, чтобы показать точки на графике и их координаты. Это поможет понять, как степень влияет на форму графика.
-        </p>
-      
         <h3 class="article__subheader">
           Виды степенных функций
         </h3>
       
         <p class="article__text">
-          Степенные функции ведут себя по-разному в зависимости от значения \( n \). Давай разберём основные случаи.
+          Степенные функции ведут себя по-разному в зависимости от значения \( n \). Давайте разберём основные случаи.
         </p>
       
-        <p class="article__text">
-          <b>1. Целые положительные степени (\( n = 1, 2, 3, ... \))</b>
-        </p>
+        <h4 class="article__h4t">
+          Целые положительные степени (\( n = 1, 2, 3, ... \))
+        </h4>
       
         <ul class="article__list">
           <li class="article__text">
@@ -120,14 +113,9 @@
           Пример: Для \( y = x^2 \) при \( x = -2 \) получаем \( y = (-2)^2 = 4 \), а при \( x = 2 \) тоже \( y = 2^2 = 4 \). Это показывает, что функция симметрична относительно оси \( Y \).
         </p>
       
-        <p class="article__text">
-          [Анимация 2: Сравнение графиков для целых степеней]  
-          Создаём анимацию, где пользователь может выбрать \( n = 1, 2, 3 \) или 4 с помощью кнопок. При выборе степени график функции \( y = x^n \) отображается на координатной плоскости. Пользователь может кликать по графику, чтобы увидеть значение \( y \) для конкретного \( x \). Добавим возможность включить/выключить сетку координат, чтобы лучше видеть точки. Это поможет увидеть, как форма графика меняется с ростом \( n \).
-        </p>
-      
-        <p class="article__text">
-          <b>2. Целые отрицательные степени (\( n = -1, -2, ... \))</b>
-        </p>
+        <h4 class="article__h4">
+          Целые отрицательные степени (\( n = -1, -2, ... \))
+        </h4>
       
         <p class="article__text">
           Если \( n \) отрицательное, функция записывается как:
@@ -153,11 +141,6 @@
         </p>
       
         <p class="article__text">
-          [Анимация 3: Исследование гиперболы]  
-          Предлагаю анимацию, где пользователь может менять \( n \) для отрицательных степеней (например, -1, -2, -3). График показывает, как выглядит функция \( y = \frac{1}{x^n} \). Пользователь может двигать точку на графике и видеть, как меняются значения \( x \) и \( y \). Также можно добавить подсказку, которая показывает, что при \( x = 0 \) функция не определена, и выделить асимптоты (оси \( X \) и \( Y \)). Это поможет понять поведение функции около нуля.
-        </p>
-      
-        <p class="article__text">
           <b>3. Дробные степени (\( n = 1/2, 1/3, 2/3, ... \))</b>
         </p>
       
@@ -178,11 +161,6 @@
           Пример: Для \( y = \sqrt{x} \) при \( x = 4 \) получаем \( y = \sqrt{4} = 2 \), а при \( x = -4 \) функция не определена, так как корень из отрицательного числа в школьной математике не берём.
         </p>
       
-        <p class="article__text">
-          [Анимация 4: График дробных степеней]  
-          Создаём интерактивный график, где пользователь выбирает дробную степень (например, 1/2, 1/3, 2/3) через выпадающее меню. График показывает функцию \( y = x^n \), а пользователь может вводить значения \( x \) и видеть результат \( y \). Для \( n = 1/2 \) можно показать, что график определён только для \( x \geq 0 \), и подсветить эту область. Это поможет понять, как дробные степени влияют на область определения.
-        </p>
-      
         <h3 class="article__subheader">
           Свойства степенной функции
         </h3>
@@ -191,9 +169,9 @@
           Чтобы лучше понять степенную функцию, давай разберём её основные свойства:
         </p>
       
-        <p class="article__text">
-          <b>Область определения:</b>
-        </p>
+        <h4 class="article__h4">
+          Область определения:
+        </h4>
       
         <ul class="article__list">
           <li class="article__text">
@@ -204,9 +182,9 @@
           </li>
         </ul>
       
-        <p class="article__text">
-          <b>Область значений:</b>
-        </p>
+        <h4 class="article__h4">
+          Область значений:
+        </h4>
       
         <ul class="article__list">
           <li class="article__text">
@@ -217,9 +195,9 @@
           </li>
         </ul>
       
-        <p class="article__text">
-          <b>Чётность:</b>
-        </p>
+        <h4 class="article__h4">
+          Чётность:
+        </h4>
       
         <ul class="article__list">
           <li class="article__text">
@@ -229,11 +207,6 @@
             Если \( n \) — нечётное число (например, 1, 3), функция нечётная, то есть \( f(-x) = -f(x) \).
           </li>
         </ul>
-      
-        <p class="article__text">
-          [Анимация 5: Исследование свойств функции]  
-          Предлагаю анимацию, где пользователь может выбрать \( n \) (например, 1, 2, 3, -1, -2, 1/2) и увидеть, как меняются область определения, область значений и чётность. На экране показывается график функции и таблица с характеристиками: область определения, область значений, чётность. Пользователь может включить режим, где график подсвечивает симметрию (для чётных/нечётных функций) или области, где функция не определена. Это поможет визуально понять свойства функции.
-        </p>
       
         <h3 class="article__subheader">
           Зачем нужны степенные функции?
@@ -254,11 +227,6 @@
             \( y = \frac{1}{x} \) используется в физике для закона обратных квадратов (например, сила притяжения).
           </li>
         </ul>
-      
-        <p class="article__text">
-          [Анимация 6: Реальные примеры степенных функций]  
-          Создаём интерактивную сцену, где пользователь выбирает пример (площадь квадрата, объём куба, закон обратных квадратов). Для площади квадрата пользователь может менять длину стороны \( x \) с помощью ползунка и видеть, как растёт площадь (\( y = x^2 \)) на графике и в виде анимированного квадрата. Для закона обратных квадратов можно показать, как уменьшается сила при увеличении расстояния. Это свяжет математику с реальной жизнью.
-        </p>
       
         <h3 class="article__subheader">
           Как строить график степенной функции?
@@ -299,11 +267,6 @@
           Соединяем точки — получаем параболу.
         </p>
       
-        <p class="article__text">
-          [Анимация 7: Построение графика шаг за шагом]  
-          Предлагаю анимацию, где пользователь выбирает функцию (например, \( y = x^2 \), \( y = x^3 \), \( y = \frac{1}{x} \)) и проходит шаги построения графика. На первом шаге показывается область определения, на втором — пользователь вводит значения \( x \) и видит точки на графике, на третьем — точки соединяются в кривую. Пользователь может переключаться между функциями и видеть, как меняется процесс. Это научит строить графики самостоятельно.
-        </p>
-      
         <h3 class="article__subheader">
           Заключение
         </h3>
@@ -311,84 +274,22 @@
         <p class="article__text">
           Теперь ты знаешь, что такое степенная функция, как она работает и где её можно встретить. Попробуй построить пару графиков или поиграть с анимациями, чтобы лучше понять!
         </p>
-      </div>
-    </section>
 
-    <!-- <section class="content">
-      <div class="container">
-        <h3 class="section-header">
-          Содержание
-        </h3>
-
-        <div class="accordion">
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Школьная математика
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Линейная алгебра
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Математическая статистика
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
+        <div class="article__footer">
+          <!-- <a href="#" class="article__footer__link link">Задачи для решения</a> -->
+          <div class="article__footer__wrapper">
+            <a href="./article_3.html" class="article__footer__btn">
+              <span class="article__footer__btn__span">Предыдущая статья</span>
+              <span class="article__footer__btn__topic">Линейная функция: просто и понятно</span>
+            </a>
+            <a href="./article_5.html" class="article__footer__btn">
+              <span class="article__footer__btn__span">Следующая статья</span>
+              <span class="article__footer__btn__topic">Графическое решение уравнений и неравенств: математика на пальцах</span>
+            </a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
 
   <footer class="footer">

@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Числа: кратко о главном</title>
+  <title>График функции в декартовой системе координат</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/normalize.css">
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/media.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/media.css">
   <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script defer src="../scripts/calculator_log_regres.js"></script>
-  <script defer src="../scripts/gradient_descent.js"></script>
-  <script defer src="../scripts/visual_binary_class.js"></script>
 </head>
 <body>
 
@@ -49,9 +47,9 @@
           Давайте разберём процесс пошагово. Это проще, чем кажется!
         </p>
       
-        <p class="article__text">
-          <b>1. Построение системы координат</b>
-        </p>
+        <h4 class="article__h4">
+          1. Построение системы координат
+        </h4>
       
         <p class="article__text">
           Начните с чертежа двух перпендикулярных осей:
@@ -70,9 +68,9 @@
           Точка пересечения этих осей — это начало координат, обозначаемое как \(O(0; 0)\).
         </p>
       
-        <p class="article__text">
-          <b>2. Выбор масштаба</b>
-        </p>
+        <h4 class="article__h4">
+          2. Выбор масштаба
+        </h4>
       
         <p class="article__text">
           Определите, сколько единиц будет соответствовать одной клетке на вашем листе. Например:
@@ -91,9 +89,9 @@
           Масштаб важен, чтобы график был аккуратным и читаемым.
         </p>
       
-        <p class="article__text">
-          <b>3. Отметка точек</b>
-        </p>
+        <h4 class="article__h4">
+          3. Отметка точек
+        </h4>
       
         <p class="article__text">
           Для каждого значения \(x\) вычислите \(y = f(x)\) и отметьте точку \((x; y)\) на координатной плоскости. Например:
@@ -108,17 +106,12 @@
           </li>
         </ul>
       
-        <p class="article__text">
-          <b>4. Соединение точек</b>
-        </p>
+        <h4 class="article__h4">
+          4. Соединение точек
+        </h4>
       
         <p class="article__text">
           Когда несколько точек отмечены, соедините их плавной линией. Это и будет график функции!
-        </p>
-      
-        <p class="article__text">
-          [Интерактивная анимация: "Построение графика функции"]  
-          [Описание анимации: Пользователь вводит функцию, анимация показывает процесс поэтапно: от вычисления значений до построения графика.]
         </p>
       
         <h3 class="article__subheader">
@@ -129,18 +122,18 @@
           Рассмотрим функцию \(y = 2x + 1\). Давайте построим её график шаг за шагом.
         </p>
       
-        <p class="article__text">
-          <b>Шаг 1: Выберем значения \(x\)</b>
-        </p>
+        <h4 class="article__h4">
+          Шаг 1: Выберем значения \(x\)
+        </h4>
       
         <p class="article__text">
           Возьмём несколько значений \(x\):  
           \(x = -2, -1, 0, 1, 2\).
         </p>
       
-        <p class="article__text">
-          <b>Шаг 2: Вычислим \(y = f(x)\)</b>
-        </p>
+        <h4 class="article__h4">
+          Шаг 2: Вычислим \(y = f(x)\)
+        </h4>
       
         <p class="article__text">
           Подставим каждое \(x\) в формулу \(y = 2x + 1\):
@@ -164,9 +157,9 @@
           </li>
         </ul>
       
-        <p class="article__text">
-          <b>Шаг 3: Отметим точки</b>
-        </p>
+        <h4 class="article__h4">
+          Шаг 3: Отметим точки
+        </h4>
       
         <p class="article__text">
           Получаем точки:
@@ -176,17 +169,12 @@
           \((-2; -3)\), \((-1; -1)\), \((0; 1)\), \((1; 3)\), \((2; 5)\).
         </p>
       
-        <p class="article__text">
-          <b>Шаг 4: Соединим точки</b>
-        </p>
+        <h4 class="article__h4">
+          Шаг 4: Соединим точки
+        </h4>
       
         <p class="article__text">
           Соединяем точки прямой линией. Вот и график функции \(y = 2x + 1\)!  
-        </p>
-      
-        <p class="article__text">
-          [Интерактивная анимация: "График функции \(y = 2x + 1\)"]  
-          [Описание анимации: Пользователь вводит функцию \(y = 2x + 1\), анимация показывает процесс построения графика поэтапно.]
         </p>
       
         <h3 class="article__subheader">
@@ -194,86 +182,24 @@
         </h3>
       
         <p class="article__text">
-          Теперь вы знаете, как строить график функции в декартовой системе координат. Это не только полезный навык, но и увлекательный способ визуализировать зависимости между числами. Графики помогают нам лучше понимать поведение функций и решать задачи в математике, физике и других науках. Удачи в построении графиков! 😊
+          Теперь вы знаете, как строить график функции в декартовой системе координат. Это не только полезный навык, но и увлекательный способ визуализировать зависимости между числами. Графики помогают нам лучше понимать поведение функций и решать задачи в математике, физике и других науках. Удачи в построении графиков!
         </p>
-      </div>
-    </section>
 
-    <!-- <section class="content">
-      <div class="container">
-        <h3 class="section-header">
-          Содержание
-        </h3>
-
-        <div class="accordion">
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Школьная математика
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Линейная алгебра
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Математическая статистика
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
+        <div class="article__footer">
+          <!-- <a href="#" class="article__footer__link link">Задачи для решения</a> -->
+          <div class="article__footer__wrapper">
+            <a href="./article_1.html" class="article__footer__btn">
+              <span class="article__footer__btn__span">Предыдущая статья</span>
+              <span class="article__footer__btn__topic">Понятие функции: что это такое?</span>
+            </a>
+            <a href="./article_3.html" class="article__footer__btn">
+              <span class="article__footer__btn__span">Следующая статья</span>
+              <span class="article__footer__btn__topic">Линейная функция: просто и понятно</span>
+            </a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
 
   <footer class="footer">

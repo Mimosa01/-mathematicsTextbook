@@ -15,13 +15,13 @@ html {
   --dark-blue-1: #121b30;
   --dark-blue-2: #1e2a47;
   --text-color-white: #cad5e2;
-  --text-color-grey: #a5a5a5;
+  --text-color-grey: rgb(165, 165, 165);
   --grey: #1c1c1c;
   --grey-light: #3f3e3e;
   --white: #fff;
   --green: rgb(0, 255, 140);
-  --blue: #00b8d9;
-  --red: #aa2222;
+  --blue: rgb(0, 184, 217);
+  --red: rgb(170, 34, 34);
   --yellow: rgb(236, 214, 14);
   --purple: #cc00cc;
 
@@ -699,11 +699,25 @@ img {
 .article__subheader {
   margin: 0;
   margin-bottom: 30px;
+  color: var(--yellow);
   font-size: 1.5em;
+}
+
+.article__h4 {
+  margin: 0;
+  margin-bottom: 30px;
+  color: var(--blue);
+  font-size: 1.25em;
 }
 
 .article__text {
   margin: 0;
+} 
+
+.article__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .article__details {
@@ -725,6 +739,10 @@ img {
   margin: 0;
   margin-bottom: 30px;
   padding-left: 15px;
+}
+
+ol.article__list {
+  padding-left: 30px;
 }
 
 .article__list li.article__text:not(:last-child) {

@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Числа: кратко о главном</title>
+  <title>Графическое решение уравнений и неравенств: математика на пальцах</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/normalize.css">
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/media.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/media.css">
   <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script defer src="../scripts/calculator_log_regres.js"></script>
-  <script defer src="../scripts/gradient_descent.js"></script>
-  <script defer src="../scripts/visual_binary_class.js"></script>
 </head>
 <body>
 
@@ -41,17 +39,17 @@
           Когда мы сталкиваемся с уравнениями или неравенствами, иногда проще всего "увидеть" их решения. Именно для этого существует графический метод — он помогает нам не только найти ответы, но и понять, как функции взаимодействуют между собой. Особенно это полезно, когда аналитическое решение кажется сложным или вообще невозможным. Давайте разберёмся, как всё это работает!
         </p>
       
-        <h2 class="article__subheader">
+        <h3 class="article__subheader">
           Как решать уравнения с помощью графиков?
-        </h2>
+        </h3>
       
         <p class="article__text">
           Графики — это как карта, которая показывает, где спрятаны "сокровища" (то есть корни уравнения). Рассмотрим несколько примеров, чтобы стало понятнее.
         </p>
       
-        <h3 class="article__subheader">
+        <h4 class="article__h4">
           Пример 1: Уравнение вида \( f(x) = 0 \)
-        </h3>
+        </h4>
       
         <p class="article__text">
           Представьте, что у нас есть уравнение \( f(x) = 0 \). Чтобы его решить:
@@ -78,15 +76,9 @@
           Значит, решения уравнения: \( x = -2 \) и \( x = 2 \).
         </p>
       
-        <p class="article__text">
-          [**Интерактивная анимация:**  
-          Пользователь может вводить различные функции \( f(x) \), и система строит соответствующий график. При наведении на точки пересечения с осью X отображаются значения корней.  
-          *Пример:* Введите \( f(x) = x^2 - 4 \) и наблюдайте, как график пересекает ось X в точках \( x = -2 \) и \( x = 2 \).]
-        </p>
-      
-        <h3 class="article__subheader">
+        <h4 class="article__h4">
           Пример 2: Уравнение вида \( f(x) = g(x) \)
-        </h3>
+        </h4>
       
         <p class="article__text">
           А что делать, если у нас два выражения? Например, \( f(x) = g(x) \). Тут тоже всё просто:
@@ -115,19 +107,13 @@
           Значит, решения уравнения: \( x = -1 \) и \( x = 2 \).
         </p>
       
-        <p class="article__text">
-          [**Интерактивная анимация:**  
-          Пользователь вводит две функции \( f(x) \) и \( g(x) \), система строит оба графика. Точки пересечения выделяются, и при наведении отображаются их координаты.  
-          *Пример:* Введите \( f(x) = x^2 \) и \( g(x) = x + 2 \), чтобы увидеть их пересечения.]
-        </p>
-      
-        <h2 class="article__subheader">
-          Как решать неравенства графически?
-        </h2>
-      
         <h3 class="article__subheader">
-          Пример 1: Неравенство вида \( f(x) > 0 \) или \( f(x) < 0 \)
+          Как решать неравенства графически?
         </h3>
+      
+        <h4 class="article__h4">
+          Пример 1: Неравенство вида \( f(x) > 0 \) или \( f(x) < 0 \)
+        </h4>
       
         <p class="article__text">
           Чтобы решить такое неравенство:
@@ -150,15 +136,9 @@
           Значит, решение неравенства: \( x \in (-\infty, -2) \cup (2, +\infty) \).
         </p>
       
-        <p class="article__text">
-          [**Интерактивная анимация:**  
-          Пользователь вводит функцию \( f(x) \), система строит её график и автоматически выделяет области, где \( f(x) > 0 \) и \( f(x) < 0 \).  
-          *Пример:* Введите \( f(x) = x^2 - 4 \) и наблюдайте выделенные области.]
-        </p>
-      
-        <h3 class="article__subheader">
+        <h4 class="article__h4">
           Пример 2: Неравенство вида \( f(x) > g(x) \) или \( f(x) < g(x) \)
-        </h3>
+        </h4>
       
         <p class="article__text">
           Теперь представим, что у нас два графика, и нужно сравнить их:
@@ -184,15 +164,9 @@
           Значит, решение неравенства: \( x \in (-\infty, -1) \cup (2, +\infty) \).
         </p>
       
-        <p class="article__text">
-          [**Интерактивная анимация:**  
-          Пользователь вводит функции \( f(x) \) и \( g(x) \), система строит оба графика и выделяет области, где \( f(x) > g(x) \) и \( f(x) < g(x) \).  
-          *Пример:* Введите \( f(x) = x^2 \) и \( g(x) = x + 2 \) и наблюдайте соответствующие области.]
-        </p>
-      
-        <h2 class="article__subheader">
+        <h3 class="article__subheader">
           Когда графический метод особенно полезен?
-        </h2>
+        </h3>
       
         <ol class="article__list">
           <li class="article__text">
@@ -209,9 +183,9 @@
           </li>
         </ol>
       
-        <h2 class="article__subheader">
+        <h3 class="article__subheader">
           Но есть и ограничения...
-        </h2>
+        </h3>
       
         <p class="article__text">
           Как и любой метод, графический подход имеет свои минусы:
@@ -232,84 +206,22 @@
         <p class="article__text">
           Итак, графический метод — это мощный и наглядный инструмент, который помогает не только решать задачи, но и глубже понимать математику. Попробуйте применить его на практике — и вы убедитесь, насколько это удобно!
         </p>
-      </div>
-    </section>
 
-    <!-- <section class="content">
-      <div class="container">
-        <h3 class="section-header">
-          Содержание
-        </h3>
-
-        <div class="accordion">
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Школьная математика
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Линейная алгебра
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Математическая статистика
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
+        <div class="article__footer">
+          <!-- <a href="#" class="article__footer__link link">Задачи для решения</a> -->
+          <div class="article__footer__wrapper">
+            <a href="./article_4.html" class="article__footer__btn">
+              <span class="article__footer__btn__span">Предыдущая статья</span>
+              <span class="article__footer__btn__topic">Степенная функция: что это и как с ней работать</span>
+            </a>
+            <a href="./article_6.html" class="article__footer__btn">
+              <span class="article__footer__btn__span">Следующая статья</span>
+              <span class="article__footer__btn__topic">Показательная функция: математика роста и убывания</span>
+            </a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
 
   <footer class="footer">

@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Числа: кратко о главном</title>
+  <title>Показательная функция: математика роста и убывания</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/normalize.css">
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/media.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/normalize.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../styles/media.css">
   <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script defer src="../scripts/calculator_log_regres.js"></script>
-  <script defer src="../scripts/gradient_descent.js"></script>
-  <script defer src="../scripts/visual_binary_class.js"></script>
 </head>
 <body>
 
@@ -64,9 +62,9 @@
           </li>
         </ul>
       
-        <h2 class="article__subheader">
+        <h3 class="article__subheader">
           Основные свойства показательной функции
-        </h2>
+        </h3>
       
         <ol class="article__list">
           <li class="article__text">
@@ -94,9 +92,9 @@
           </li>
         </ol>
       
-        <h2 class="article__subheader">
+        <h4 class="article__h4">
           Пример: \( y = 2^x \)
-        </h2>
+        </h4>
       
         <p class="article__text">
           Давайте посмотрим, как выглядит график функции \( y = 2^x \). Для этого выберем несколько значений \( x \) и посчитаем соответствующие \( y \):
@@ -116,9 +114,9 @@
           Пользователь может изменять значение основания \( a \) с помощью ползунка (например, от 0.1 до 5). При изменении \( a \) автоматически обновляется график функции \( y = a^x \). Также отображаются координаты ключевых точек, таких как \( (0, 1) \), и асимптота. Это позволяет наглядно увидеть, как изменение основания влияет на форму графика.]
         </p>
       
-        <h2 class="article__subheader">
+        <h4 class="article__h4">
           Пример: \( y = \left( \frac{1}{2} \right)^x \)
-        </h2>
+        </h4>
       
         <p class="article__text">
           Теперь рассмотрим случай, когда основание \( a = \frac{1}{2} \). Поскольку \( 0 < a < 1 \), функция будет убывать. Вот таблица значений:
@@ -133,14 +131,9 @@
           Здесь всё наоборот: при увеличении \( x \) значения \( y \) становятся всё меньше и меньше, приближаясь к нулю.
         </p>
       
-        <p class="article__text">
-          [**Интерактивная анимация:**  
-          Аналогично предыдущей анимации, пользователь может изменять значение основания \( a \) в диапазоне от 0.1 до 1. При изменении \( a \) отображается соответствующий убывающий график функции \( y = a^x \). Это помогает понять, как изменение основания влияет на скорость убывания функции.]
-        </p>
-      
-        <h2 class="article__subheader">
+        <h3 class="article__subheader">
           Где применяется показательная функция?
-        </h2>
+        </h3>
       
         <p class="article__text">
           Показательная функция — настоящая звезда в мире реальных процессов. Она помогает описать явления, где изменения зависят от текущего состояния. Вот несколько примеров:
@@ -155,14 +148,9 @@
           </li>
         </ul>
       
-        <p class="article__text">
-          [**Интерактивная анимация:**  
-          Пользователь может выбрать различные реальные процессы (например, рост населения, охлаждение объекта) и видеть соответствующий график показательной функции. Также можно изменять параметры (например, скорость роста или убывания) и наблюдать, как это влияет на форму графика.]
-        </p>
-      
-        <h2 class="article__subheader">
+        <h3 class="article__subheader">
           Как решать показательные уравнения?
-        </h2>
+        </h3>
       
         <p class="article__text">
           Показательные уравнения — это уравнения, где неизвестное стоит в показателе степени. Они решаются довольно просто, если знать несколько правил.
@@ -177,9 +165,9 @@
           </p>
         </p>
       
-        <h3 class="article__subheader">
+        <h4 class="article_h4">
           Шаг 1: Выразите обе стороны с одинаковым основанием
-        </h3>
+        </h4>
       
         <p class="article__text">
           Если это возможно, попробуйте записать обе части уравнения с одним и тем же основанием.
@@ -201,9 +189,9 @@
           Следовательно, \( x = 3 \).
         </p>
       
-        <h3 class="article__subheader">
+        <h4 class="article__h4">
           Шаг 2: Используйте логарифмы
-        </h3>
+        </h4>
       
         <p class="article__text">
           Если выразить обе стороны с одинаковым основанием невозможно, используйте логарифмы:
@@ -215,91 +203,24 @@
         </p>
       
         <p class="article__text">
-          [**Интерактивная анимация:**  
-          Пользователь вводит уравнение вида \( a^x = b \), и система пошагово показывает процесс решения: попытка выразить обе стороны с одинаковым основанием, применение логарифмов, вычисление значения \( x \). Это помогает понять методику решения показательных уравнений.]
-        </p>
-      
-        <p class="article__text">
           Теперь вы знаете, как работают показательные функции и как их использовать для описания реальных процессов. Эта функция — мощный инструмент, который поможет вам разобраться в мире роста и убывания!
         </p>
-      </div>
-    </section>
 
-    <!-- <section class="content">
-      <div class="container">
-        <h3 class="section-header">
-          Содержание
-        </h3>
-
-        <div class="accordion">
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Школьная математика
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Линейная алгебра
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="accordion__item">
-            <h4 class="accordion__header">
-              <button class="btn-reset accordion__btn">
-                Математическая статистика
-              </button>
-            </h4>
-            <ol class="list-reset accordion__content">
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-              <li class="accordion__content__item">
-                <a href="#" class="accordion__link">Ссылка</a>
-              </li>
-            </ol>
+        <div class="article__footer">
+          <!-- <a href="#" class="article__footer__link link">Задачи для решения</a> -->
+          <div class="article__footer__wrapper">
+            <a href="./article_5.html" class="article__footer__btn">
+              <span class="article__footer__btn__span">Предыдущая статья</span>
+              <span class="article__footer__btn__topic">Графическое решение уравнений и неравенств: математика на пальцах</span>
+            </a>
+            <a href="./article_7.html" class="article__footer__btn">
+              <span class="article__footer__btn__span">Следующая статья</span>
+              <span class="article__footer__btn__topic">Логарифмы и логарифмическая функция: математика для любопытных</span>
+            </a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
 
   <footer class="footer">
