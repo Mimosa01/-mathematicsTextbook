@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -46,6 +45,7 @@ body {
   font-family: "Roboto Mono", monospace;
   line-height: 1.8;
   background-color: var(--main-theme);
+  scroll-behavior: smooth;
 }
 
 a {
