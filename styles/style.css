@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -264,10 +265,21 @@ img {
 /* HEADER */
 
 .header {
+  position: relative;
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 15px 30px;
   max-width: 1440px;
+}
+
+.header .btn {
+  border: none;
+  background-color: transparent;
+  transition: color 0.3s ease;
+}
+
+.header .btn:hover {
+  color: var(--yellow)
 }
 
 .header__container {
@@ -699,14 +711,14 @@ img {
 .article__subheader {
   margin: 0;
   margin-bottom: 30px;
-  color: var(--yellow);
+  color: var(--text-color-grey);
   font-size: 1.5em;
 }
 
 .article__h4 {
   margin: 0;
   margin-bottom: 30px;
-  color: var(--blue);
+  color: var(--text-color-grey);
   font-size: 1.25em;
 }
 
